@@ -4,6 +4,7 @@
     <app-hero></app-hero>
     <app-button
       button="See More"
+      router="projects"
       rootClassName="button-root-class-name2"
     ></app-button>
   </div>

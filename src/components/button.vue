@@ -1,6 +1,11 @@
 <template>
   <div class="button-container" v-bind:class="rootClassName">
-    <button class="button-button button">{{ button }}</button>
+      <router-link v-if="router" :to="{path: router}">
+        <button class="button-button button" v-bind:class="rootClassName" >{{ button }}</button>
+      </router-link>
+      <a v-else :href="link" target="_blank" rel="noreferrer noopener">
+        <button class="button-button button" v-bind:class="rootClassName" >{{ button }}</button>
+      </a>
   </div>
 </template>
 
@@ -13,7 +18,14 @@ export default {
       default: 'Button',
     },
     rootClassName: String,
-  },
+    link: {
+      type: String,
+      default: 'https://www.google.com'
+    },
+    router: {
+      type: String
+    }
+  }
 }
 </script>
 
