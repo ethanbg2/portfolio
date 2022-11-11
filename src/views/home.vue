@@ -2,7 +2,6 @@
   <div class="home-container">
     <app-header></app-header>
     <app-hero></app-hero>
-    <tag-pane></tag-pane>
     <app-button
       button="See More"
       rootClassName="button-root-class-name2"
@@ -13,15 +12,13 @@
 <script>
 import AppHeader from '../components/header'
 import AppHero from '../components/hero'
-import TagPane from '../components/tag-pane'
 import AppButton from '../components/button'
 
 export default {
-  name: 'Home',
+  name: 'Projects',
   components: {
     AppHeader,
     AppHero,
-    TagPane,
     AppButton
   },
   metaInfo: {

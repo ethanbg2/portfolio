@@ -8,6 +8,7 @@ module.exports = {
       },
     },
   },
+
   chainWebpack: config => {
     config.plugin('copy').tap(args => {
       const UNESCAPED_GLOB_SYMBOLS_RE = /(\\?)([()*?[\]{|}]|^!|[!+@](?=\())/g;
@@ -16,5 +17,9 @@ module.exports = {
       args[0].patterns[0].globOptions.ignore = args[0].patterns[0].globOptions.ignore.map(i => i.replace(publicDir, escapePublicDir));
       return args;
   });
-  }
+  },
+
+  transpileDependencies: [
+    'vuetify'
+  ]
 };

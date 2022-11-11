@@ -10,13 +10,18 @@
     "core-js": "^3.26.0",
     "vue": "^2.6.7",
     "vue-meta": "^2.2.1",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "vuetify": "^2.6.0"
   },
   "devDependencies": {
     "@vue/babel-preset-app": "^5.0.8",
     "@vue/cli-plugin-babel": "^5.0.4",
     "@vue/cli-service": "^5.0.8",
-    "vue-template-compiler": "^2.6.7"
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "vue-template-compiler": "^2.6.7",
+    "vuetify-loader": "^1.7.0"
   },
   "postcss": {
     "plugins": {
