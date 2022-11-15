@@ -1,12 +1,9 @@
 <template>
   <div class="home-container">
     <app-header></app-header>
-    <app-hero></app-hero>
+    <app-hero :image_src="require(`@/assets/${resume.basics.image}`)" :bio="resume.basics.summary" :button_link="resume.basics.resume_url"> </app-hero>
     <div class="tag-pane-container">
-      <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-      <app-tag button="c++" rootClassName="tag-root-class-name15"></app-tag>
-      <app-tag button="vue.js" rootClassName="tag-root-class-name17"></app-tag>
-      <app-tag button="MUI" rootClassName="tag-root-class-name18"></app-tag>
+      <app-tag v-for="item in resume.top_skills" :button="item.name"></app-tag>
     </div>
     <project-gallary
       rootClassName="project-gallary-root-class-name1"
@@ -27,10 +24,14 @@ import AppTag from '../components/tag'
 import ProjectGallary from '../components/project-gallary'
 import AppButton from '../components/button'
 import AppFooter from '../components/footer'
+import resume from '@/assets/resume.json'
 
 export default {
   name: 'Home',
   props: {},
+  data () {
+    return {resume: resume}
+  },
   components: {
     AppHeader,
     AppHero,
@@ -38,7 +39,7 @@ export default {
     ProjectGallary,
     AppButton,
     AppFooter
-  },
+  }
 }
 </script>
 

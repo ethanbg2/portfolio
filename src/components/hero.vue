@@ -7,13 +7,13 @@
       </h1>
       <span class="hero-text3">
         <span>
-          Here is My bio, insert text to this, I wonder how long it can get.
-          let&apos;s try it out right now!
+          {{bio}}
         </span>
         <br />
       </span>
       <app-button
         button="Download Resume"
+        :link="button_link"
         rootClassName="button-root-class-name1"
       ></app-button>
     </div>
@@ -36,10 +36,18 @@ export default {
       default:
         'https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxtaW5pbWFsaXNtJTIwZ3JlZW58ZW58MHx8fHwxNjI1ODQxMDcw&ixlib=rb-1.2.1&w=300',
     },
+    bio: {
+      type: String,
+      default: 'Here is My bio, insert text to this, I wonder how long it can get'
+    },
+    button_link: {
+      type: String,
+      default: 'https://www.google.com'
+    }
   },
   components: {
     AppButton,
-  },
+  }
 }
 </script>
 
