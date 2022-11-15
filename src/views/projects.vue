@@ -1,11 +1,23 @@
 <template>
   <div class="projects-container">
     <app-header></app-header>
-    <tag-pane></tag-pane>
-    <app-footer></app-footer>
+    <h1 class="projects-text">
+      <span>My Work</span>
+      <br />
+    </h1>
+    <tag-pane rootClassName="tag-pane-root-class-name"></tag-pane>
+    <h2 class="projects-text">
+      <span>Projects</span>
+      <br />
+    </h2>
     <project-gallary
-      rootClassName="project-gallary-root-class-name1"
+      rootClassName="project-gallary-root-class-name"
     ></project-gallary>
+    <h2 class="projects-text">
+      <span>Courses</span>
+      <br />
+    </h2>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -45,5 +57,10 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   background-color: var(--dl-color-darkmode-base);
+}
+.projects-text {
+  margin-top: var(--dl-space-space-threeunits);
+  margin-bottom: var(--dl-space-space-threeunits);
+  color: var(--dl-color-gray-white);
 }
 </style>
