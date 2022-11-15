@@ -10,9 +10,7 @@
       <span>Projects</span>
       <br />
     </h2>
-    <project-gallary
-      rootClassName="project-gallary-root-class-name"
-    ></project-gallary>
+    <project-gallary :projects="resume.projects"></project-gallary>
     <h2 class="projects-text">
       <span>Courses</span>
       <br />
@@ -26,9 +24,13 @@ import AppHeader from '../components/header'
 import TagPane from '../components/tag-pane'
 import AppFooter from '../components/footer'
 import ProjectGallary from '../components/project-gallary'
+import resume from '@/assets/resume.json'
 
 export default {
   name: 'Projects',
+  data () {
+    return {resume:resume}
+  },
   components: {
     AppHeader,
     TagPane,

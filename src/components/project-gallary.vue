@@ -1,8 +1,12 @@
 <template>
     <div class="project-gallary-container" v-bind:class="rootClassName">
-      <project-card rootClassName="project-card-root-class-name"></project-card>
-      <project-card rootClassName="project-card-root-class-name1"></project-card>
-      <project-card rootClassName="project-card-root-class-name2"></project-card>
+      <project-card 
+        v-for="item in projects"
+        :image_src="require(`@/assets/${item.image}`)"
+        :heading="item.name"
+        :text="item.type"
+      >
+      </project-card>
     </div>
   </template>
   
@@ -12,7 +16,10 @@
   export default {
     name: 'ProjectGallary',
     props: {
-      rootClassName: String,
+      projects: {
+        type: Object,
+        default: []
+      }
     },
     components: {
       ProjectCard,

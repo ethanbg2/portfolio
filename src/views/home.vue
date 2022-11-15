@@ -1,13 +1,14 @@
 <template>
   <div class="home-container">
     <app-header></app-header>
-    <app-hero :image_src="require(`@/assets/${resume.basics.image}`)" :bio="resume.basics.summary" :button_link="resume.basics.resume_url"> </app-hero>
+    <app-hero 
+      :image_src="require(`@/assets/${resume.basics.image}`)" 
+      :bio="resume.basics.summary" :button_link="resume.basics.resume_url"> 
+    </app-hero>
     <div class="tag-pane-container">
       <app-tag v-for="item in resume.top_skills" :button="item.name"></app-tag>
     </div>
-    <project-gallary
-      rootClassName="project-gallary-root-class-name1"
-    ></project-gallary>
+    <project-gallary :projects="resume.projects"></project-gallary>
     <app-button
       button="See More"
       router="projects"

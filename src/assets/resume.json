@@ -93,10 +93,6 @@
         "Unicorns"
       ]
     }],
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference…"
-    }],
     "projects": [{
       "name": "Project",
       "description": "Description…",
@@ -109,10 +105,46 @@
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "url": "https://project.com/",
+      "image": "profile.jpg",
       "roles": [
         "Team Lead"
       ],
-      "entity": "Entity",
       "type": "application"
-    }]
+    },
+    {
+        "name": "Project",
+        "description": "Description…",
+        "highlights": [
+          "Won award at AIHacks 2016"
+        ],
+        "keywords": [
+          "HTML"
+        ],
+        "startDate": "2019-01-01",
+        "endDate": "2021-01-01",
+        "url": "https://project.com/",
+        "image": "profile.jpg",
+        "roles": [
+          "Team Lead"
+        ],
+        "type": "application"
+      },
+      {
+        "name": "Project",
+        "description": "Description…",
+        "highlights": [
+          "Won award at AIHacks 2016"
+        ],
+        "keywords": [
+          "HTML"
+        ],
+        "startDate": "2019-01-01",
+        "endDate": "2021-01-01",
+        "url": "https://project.com/",
+        "image": "profile.jpg",
+        "roles": [
+          "Team Lead"
+        ],
+        "type": "application"
+      }]
   }
