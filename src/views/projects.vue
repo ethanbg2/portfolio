@@ -2,18 +2,26 @@
   <div class="projects-container">
     <app-header></app-header>
     <tag-pane></tag-pane>
+    <app-footer></app-footer>
+    <project-gallary
+      rootClassName="project-gallary-root-class-name1"
+    ></project-gallary>
   </div>
 </template>
 
 <script>
 import AppHeader from '../components/header'
 import TagPane from '../components/tag-pane'
+import AppFooter from '../components/footer'
+import ProjectGallary from '../components/project-gallary'
 
 export default {
-  name: 'Home',
+  name: 'Projects',
   components: {
     AppHeader,
-    TagPane
+    TagPane,
+    AppFooter,
+    ProjectGallary
   },
   metaInfo: {
     title: 'Portfolio',
