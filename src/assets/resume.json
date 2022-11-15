@@ -94,7 +94,7 @@
       ]
     }],
     "projects": [{
-      "name": "Project",
+      "name": "Networks of Misnformation",
       "description": "Description…",
       "highlights": [
         "Won award at AIHacks 2016"
@@ -112,7 +112,7 @@
       "type": "application"
     },
     {
-        "name": "Project",
+        "name": "Project2",
         "description": "Description…",
         "highlights": [
           "Won award at AIHacks 2016"
@@ -130,7 +130,7 @@
         "type": "application"
       },
       {
-        "name": "Project",
+        "name": "Project3",
         "description": "Description…",
         "highlights": [
           "Won award at AIHacks 2016"
