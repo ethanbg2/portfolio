@@ -1,5 +1,5 @@
 <template>
-    <div class="project-gallary-container" v-bind:class="rootClassName">
+    <div class="project-gallary-container">
       <project-card 
         v-for="item in projects"
         :image_src="require(`@/assets/${item.image}`)"
@@ -17,7 +17,7 @@
     name: 'ProjectGallary',
     props: {
       projects: {
-        type: Object,
+        type: Array,
         default: []
       }
     },

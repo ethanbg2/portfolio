@@ -4,6 +4,7 @@ import Meta from 'vue-meta'
 
 import Projects from './views/projects'
 import Home from './views/home'
+import ProjectPage from './components/project-page'
 import './style.css'
 
 Vue.use(Router)
@@ -21,5 +22,10 @@ export default new Router({
       path: '/',
       component: Home,
     },
+    {
+      name: 'Project',
+      path: '/project/:id',
+      component: ProjectPage
+    }
   ],
 })

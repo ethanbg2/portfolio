@@ -1,12 +1,12 @@
 <template>
-    <div class="project-card-container" v-bind:class="rootClassName">
-      <img :src="image_src" :alt="image_alt" class="project-card-image" />
-      <h1 class="project-card-text">{{ heading }}</h1>
-      <span class="project-card-text1">{{ text }}</span>
-      <svg viewBox="0 0 1024 1024" class="project-card-icon">
-        <path d="M708 366l60 60-256 256-256-256 60-60 196 196z"></path>
-      </svg>
-    </div>
+      <router-link :to="`project/${heading}`" class="project-card-container">
+        <img :src="image_src" :alt="image_alt" class="project-card-image" />
+        <h1 class="project-card-text">{{ heading }}</h1>
+        <span class="project-card-text1">{{ text }}</span>
+        <svg viewBox="0 0 1024 1024" class="project-card-icon">
+          <path d="M708 366l60 60-256 256-256-256 60-60 196 196z"></path>
+        </svg>
+    </router-link>
   </template>
   
   <script>
