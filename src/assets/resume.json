@@ -2,7 +2,7 @@
     "basics": {
       "name": "Ethan Grinberg",
       "label": "Software Devloper",
-      "image": "profile.jpg",
+      "image": "cover-image.png",
       "email": "ethanbg2@illinois.edu",
       "phone": "(309) 202-6246",
       "url": "https://johndoe.com",
@@ -141,7 +141,7 @@
         "startDate": "2019-01-01",
         "endDate": "2021-01-01",
         "url": "https://project.com/",
-        "image": "profile.jpg",
+        "image": "cover-image.png",
         "roles": [
           "Team Lead"
         ],

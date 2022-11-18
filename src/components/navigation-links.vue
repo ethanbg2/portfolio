@@ -1,10 +1,10 @@
 <template>
   <nav class="navigation-links-nav" v-bind:class="rootClassName">
-    <router-link to="/projects" class="navigation-links-navlink">
+    <router-link to="/projects" class="navigation-links-text">
       {{ text }}
     </router-link>
-    <span class="navigation-links-text">{{ text1 }}</span>
-    <span class="navigation-links-text1">{{ text2 }}</span>
+    <span class="navigation-links-text1">{{ text1 }}</span>
+    <span class="navigation-links-text2">{{ text2 }}</span>
   </nav>
 </template>
 
@@ -36,17 +36,29 @@ export default {
   align-items: center;
   flex-direction: row;
 }
-.navigation-links-navlink {
-  color: var(--dl-color-gray-white);
-  text-decoration: none;
-}
 .navigation-links-text {
   color: var(--dl-color-gray-white);
-  margin-left: var(--dl-space-space-twounits);
+  transition: 0.3s;
+  text-decoration: none;
+}
+.navigation-links-text:hover {
+  color: var(--dl-color-darkmode-4);
 }
 .navigation-links-text1 {
   color: var(--dl-color-gray-white);
+  transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+}
+.navigation-links-text1:hover {
+  color: var(--dl-color-darkmode-4);
+}
+.navigation-links-text2 {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+  margin-left: var(--dl-space-space-twounits);
+}
+.navigation-links-text2:hover {
+  color: var(--dl-color-darkmode-4);
 }
 
 @media(max-width: 767px) {
@@ -54,14 +66,14 @@ export default {
     align-items: flex-start;
     flex-direction: column;
   }
-  .navigation-links-navlink {
-    margin-bottom: var(--dl-space-space-unit);
-  }
   .navigation-links-text {
-    margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
   .navigation-links-text1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text2 {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
