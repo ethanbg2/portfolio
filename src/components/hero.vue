@@ -47,7 +47,7 @@ export default {
   },
   components: {
     AppButton,
-  }
+  },
 }
 </script>
 
@@ -57,6 +57,7 @@ export default {
   display: flex;
   padding: var(--dl-space-space-threeunits);
   position: relative;
+  flex-wrap: wrap;
   max-width: var(--dl-size-size-maxwidth);
   min-height: 80%;
   align-items: center;
@@ -79,10 +80,14 @@ export default {
   max-width: 450px;
 }
 .hero-text3 {
-  color: var(--dl-color-gray-white);
+  color: var(--dl-color-gray-900);
   width: 100%;
   height: 100%;
+  font-size: 20px;
+  align-self: stretch;
+  font-style: normal;
   margin-top: var(--dl-space-space-twounits);
+  font-weight: 600;
   margin-bottom: var(--dl-space-space-twounits);
 }
 .hero-image {
