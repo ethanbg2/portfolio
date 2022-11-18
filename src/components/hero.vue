@@ -58,10 +58,10 @@ export default {
   padding: var(--dl-space-space-threeunits);
   position: relative;
   max-width: var(--dl-size-size-maxwidth);
-  min-height: 80vh;
+  min-height: 80%;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 .hero-container {
   width: auto;
@@ -69,9 +69,9 @@ export default {
   display: flex;
   flex-wrap: wrap;
   padding-top: var(--dl-space-space-threeunits);
-  margin-right: var(--dl-space-space-sixunits);
   padding-right: var(--dl-space-space-fourunits);
   flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
 }
 .hero-text {
   color: var(--dl-color-gray-white);
@@ -88,7 +88,6 @@ export default {
 .hero-image {
   width: var(--dl-size-size-xxlarge);
   object-fit: cover;
-  margin-right: var(--dl-space-space-unit);
   border-radius: var(--dl-radius-radius-radius8);
 }
 @media(max-width: 1600px) {
@@ -101,13 +100,16 @@ export default {
   .hero-image {
     margin-top: 0px;
     margin-left: 0px;
-    margin-right: var(--dl-space-space-unit);
+    margin-right: 0px;
     margin-bottom: 0px;
   }
 }
 @media(max-width: 1200px) {
   .hero-hero {
     max-width: 100%;
+    min-height: 80%;
+    align-items: center;
+    justify-content: center;
   }
   .hero-container {
     flex-wrap: wrap;
@@ -115,7 +117,7 @@ export default {
   }
   .hero-image {
     width: var(--dl-size-size-xxlarge);
-    margin-right: var(--dl-space-space-fiveunits);
+    margin-right: 0px;
     padding-right: 0px;
   }
 }

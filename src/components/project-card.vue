@@ -41,6 +41,7 @@ export default {
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  box-shadow: 0px 0px 5px 2px #000000;
   margin-top: var(--dl-space-space-twounits);
   align-items: center;
   margin-left: var(--dl-space-space-twounits);
