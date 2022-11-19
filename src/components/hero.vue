@@ -2,7 +2,7 @@
   <div class="hero-hero">
     <div class="hero-container">
       <h1 class="hero-text">
-        <span>Hi, I&apos;m Ethan</span>
+        <span>Hi, I&apos;m Ethan.</span>
         <br />
       </h1>
       <span class="hero-text3">
