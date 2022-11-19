@@ -8,12 +8,7 @@
     <div class="tag-pane-container">
       <app-tag v-for="item in resume.top_skills" :button="item.name"></app-tag>
     </div>
-    <project-gallary :projects="resume.projects"></project-gallary>
-    <app-button
-      button="See More"
-      router="projects"
-      rootClassName="button-root-class-name2"
-    ></app-button>
+    <Work :projects="resume.projects"></Work>
     <app-footer></app-footer>
   </div>
 </template>
@@ -25,6 +20,7 @@ import AppTag from '../components/tag'
 import ProjectGallary from '../components/project-gallary'
 import AppButton from '../components/button'
 import AppFooter from '../components/footer'
+import Work from '../components/work'
 import resume from '@/assets/resume.json'
 
 export default {
@@ -39,7 +35,8 @@ export default {
     AppTag,
     ProjectGallary,
     AppButton,
-    AppFooter
+    AppFooter,
+    Work
   }
 }
 </script>

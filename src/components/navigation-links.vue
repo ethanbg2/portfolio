@@ -1,8 +1,8 @@
 <template>
   <nav class="navigation-links-nav" v-bind:class="rootClassName">
-    <router-link to="/projects" class="navigation-links-text">
+    <span class="navigation-links-text">
       {{ text }}
-    </router-link>
+    </span>
     <span class="navigation-links-text1">{{ text1 }}</span>
     <span class="navigation-links-text2">{{ text2 }}</span>
   </nav>
