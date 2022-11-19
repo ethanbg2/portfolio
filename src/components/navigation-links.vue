@@ -1,10 +1,14 @@
 <template>
   <nav class="navigation-links-nav" v-bind:class="rootClassName">
-    <span class="navigation-links-text">
-      {{ text }}
-    </span>
-    <span class="navigation-links-text1">{{ text1 }}</span>
-    <span class="navigation-links-text2">{{ text2 }}</span>
+    <router-link :to="{name: 'Home', hash: '#work'}" class="navigation-links-text">
+      Work
+    </router-link>
+    <router-link :to="{name: 'Home', hash: '#experience'}" class="navigation-links-text1">
+      Experience
+    </router-link>
+    <router-link :to="{name: 'Home', hash: '#courses'}" class="navigation-links-text2">
+      Courses
+    </router-link>
   </nav>
 </template>
 
