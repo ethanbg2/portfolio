@@ -1,7 +1,7 @@
 <template>
   <router-link :to="`project/${heading}`" class="project-card-container">
     <img :alt="image_alt" :src="image_src" class="project-card-image" />
-    <h2 class="project-card-text">project</h2>
+    <h2 class="project-card-text">{{heading}}</h2>
     <span class="project-card-text1">{{ text }}</span>
     <span class="project-card-text2">SEE MORE</span>
   </router-link>

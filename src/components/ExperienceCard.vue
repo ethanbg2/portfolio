@@ -1,5 +1,5 @@
 <template>
-    <div class="experience-card-container" v-bind:class="rootClassName">
+    <router-link :to="`project/${name}`" class="experience-card-container">
       <div class="experience-card-feature-card">
         <div class="experience-card-container1">
           <svg viewBox="0 0 1024 1024" class="experience-card-icon">
@@ -20,12 +20,12 @@
           <br />
         </h2>
         <span class="experience-card-text06">
-          <span>Media and Advertising Lab UIUC</span>
+          <span>{{name}}</span>
           <br />
         </span>
         <span class="experience-card-text09">SEE MORE</span>
       </div>
-    </div>
+    </router-link>
   </template>
   
   <script>
@@ -33,6 +33,10 @@
     name: 'ExperienceCard',
     props: {
       rootClassName: String,
+      name: {
+        type: String,
+        default: "Apple"
+      }
     },
   
     data() {
