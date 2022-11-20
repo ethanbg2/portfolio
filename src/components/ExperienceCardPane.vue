@@ -1,6 +1,6 @@
 <template>
-    <div class="course-card-pane-container" v-bind:class="rootClassName">
-      <div class="course-card-pane-container1">
+    <div class="experience-card-pane-container" v-bind:class="rootClassName">
+      <div class="experience-card-pane-container1">
         <ExperienceCard></ExperienceCard>
         <ExperienceCard></ExperienceCard>
       </div>
@@ -22,21 +22,23 @@
   </script>
   
   <style scoped>
-  .course-card-pane-container {
+  .experience-card-pane-container {
     width: 100%;
     height: auto;
     display: flex;
     position: relative;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
-  .course-card-pane-container1 {
+  .experience-card-pane-container1 {
     flex: 0 0 auto;
     width: 100%;
     display: flex;
-    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    align-self: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
   }
   
   </style>
