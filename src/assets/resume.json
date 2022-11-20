@@ -56,7 +56,6 @@
       "type": "Web App",
       "description": "Description…",
       "date": "May 2021",
-      "image": "profile.jpg",
       "skills": [
         "Python",
         "Java",
@@ -84,39 +83,34 @@
       ]
     },
     {
-        "name": "Positivity Journal",
-        "description": "Description…",
-        "highlights": [
-          "Won award at AIHacks 2016"
-        ],
-        "keywords": [
-          "HTML"
-        ],
-        "startDate": "2019-01-01",
-        "endDate": "2021-01-01",
-        "url": "https://project.com/",
-        "image": "profile.jpg",
-        "roles": [
-          "Team Lead"
-        ],
-        "type": "mobile application"
-      },
-      {
-        "name": "Meal Planner",
-        "description": "Description…",
-        "highlights": [
-          "Won award at AIHacks 2016"
-        ],
-        "keywords": [
-          "HTML"
-        ],
-        "startDate": "2019-01-01",
-        "endDate": "2021-01-01",
-        "url": "https://project.com/",
-        "image": "profile.jpg",
-        "roles": [
-          "Team Lead"
-        ],
-        "type": "web application"
-      }]
+      "name": "Misinformation",
+      "type": "Data Science",
+      "description": "Description…",
+      "date": "May 2021",
+      "skills": [
+        "Python",
+        "Java",
+        "React.js"
+      ],
+      "images": [
+        "profile.jpg",
+        "profile.jpg",
+        "profile.jpg"
+      ],
+      "contributions": [
+        "task 1",
+        "task 2",
+        "task 3"
+      ],
+      "links": [
+        {
+          "text": "test",
+          "url": "https://www.google.com"
+        },
+        {
+          "text": "test 2",
+          "url": "https://ethangrinberg.netlify.app/"
+        }
+      ]
+    }]
   }
