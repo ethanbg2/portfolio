@@ -1,13 +1,16 @@
 <template>
   <nav class="navigation-links-nav" v-bind:class="rootClassName">
     <router-link :to="{name: 'Home', hash: '#work'}" class="navigation-links-text">
-      Work
+      Projects
     </router-link>
     <router-link :to="{name: 'Home', hash: '#experience'}" class="navigation-links-text1">
       Experience
     </router-link>
-    <router-link :to="{name: 'Home', hash: '#courses'}" class="navigation-links-text2">
+    <router-link :to="{name: 'Home', hash: '#courses'}" class="navigation-links-text1">
       Courses
+    </router-link>
+    <router-link :to="{name: 'Home'}" class="navigation-links-text1">
+      About Me
     </router-link>
   </nav>
 </template>
@@ -56,11 +59,7 @@ export default {
 .navigation-links-text1:hover {
   color: var(--dl-color-darkmode-4);
 }
-.navigation-links-text2 {
-  color: var(--dl-color-gray-white);
-  transition: 0.3s;
-  margin-left: var(--dl-space-space-twounits);
-}
+
 .navigation-links-text2:hover {
   color: var(--dl-color-darkmode-4);
 }
