@@ -52,6 +52,8 @@
     text-align: center;
     font-weight: 500;
     margin-bottom: var(--dl-space-space-halfunit);
+    margin-left: var(--dl-space-space-halfunit);
+    margin-right: var(--dl-space-space-halfunit);
   }
   
   
