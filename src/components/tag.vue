@@ -4,7 +4,12 @@ Button
 
 <template>
   <div class="tag-container" v-bind:class="rootClassName">
-    <button v-bind:class="{'tag-button button': !clicked, 'tag-button-clicked button': clicked}" v-on:click="clicked=!clicked">{{ button }} </button>
+    <button 
+    v-bind:class="{'tag-button button': !clicked, 'tag-button-clicked button': clicked}" 
+    v-on:click="onClick"
+    >
+      {{ button }} 
+    </button>
   </div>
 </template>
 
@@ -21,6 +26,16 @@ export default {
   data() {
     return {
         clicked: false
+    }
+  },
+  methods: {
+    onClick() {
+      this.clicked = !this.clicked
+      if (this.clicked) {
+        this.$emit('clicked', this.button)
+      } else {
+        this.$emit('clicked', `!${this.button}`)
+      }
     }
   }
 }

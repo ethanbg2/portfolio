@@ -4,7 +4,7 @@
       <span class="work-text01">{{ text }}</span>
       <br />
     </h1>
-    <tag-pane rootClassName="tag-pane-root-class-name"></tag-pane>
+    <tag-pane @clicked="onTagClick" rootClassName="tag-pane-root-class-name"></tag-pane>
     <h2 id="projects" class="work-text03">
       <span class="work-text04">{{ text1 }}</span>
       <br />
@@ -59,6 +59,21 @@ export default {
     CourseCardPane,
     ExperienceCardPane
   },
+  data() {
+    return {queries: new Set()}
+  },
+  methods: {
+    onTagClick(value) {
+      const first = value[0]
+      if (first == "!") {
+        var tag = value.split("!")[1]
+        this.queries.delete(tag)
+      } else {
+        this.queries.add(value)
+      }
+      console.log(this.queries)
+    }
+  }
 }
 </script>
 

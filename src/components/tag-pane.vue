@@ -6,7 +6,7 @@
             </v-expansion-panel-header>
             <v-expansion-panel-content color="var(--dl-color-darkmode-base)">
                 <div class="tag-pane-container">
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
+                <app-tag @clicked="onTagClick" button="Python" rootClassName="tag-root-class-name19"></app-tag>
                 <app-tag button="c++" rootClassName="tag-root-class-name15"></app-tag>
                 <app-tag button="vue.js" rootClassName="tag-root-class-name17"></app-tag>
                 <app-tag button="MUI" rootClassName="tag-root-class-name18"></app-tag>
@@ -39,6 +39,11 @@
     components: {
       AppTag,
     },
+    methods: {
+      onTagClick(value) {
+        this.$emit("clicked", value)
+      }
+    }
   }
   </script>
   
