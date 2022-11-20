@@ -51,26 +51,27 @@ export default {
   background-color: var(--dl-color-darkmode-base);
 }
 .project-page-container1 {
-  width: 70%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  max-width: var(--dl-size-size-maxwidth);
   align-self: center;
   margin-top: var(--dl-space-space-threeunits);
   align-items: flex-start;
   margin-left: 0%;
-  padding-left: var(--dl-space-space-twounits);
-  padding-right: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
   flex-direction: column;
 }
 .project-page-text {
   color: var(--dl-color-gray-white);
-  font-size: 4rem;
+  font-size: 2rem;
   align-self: flex-start;
 }
 @media(max-width: 1600px) {
   .project-page-container1 {
-    width: 70%;
+    width: 100%;
     align-self: center;
   }
 }
