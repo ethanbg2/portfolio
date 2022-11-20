@@ -8,7 +8,7 @@
     <div class="tag-pane-container">
       <app-tag v-for="item in resume.top_skills" :button="item.name"></app-tag>
     </div>
-    <Work :projects="resume.projects"></Work>
+    <Work :resume="resume"></Work>
     <div class="button-container">
       <AppButton button="Learn More About Me!"></AppButton>
     </div>
