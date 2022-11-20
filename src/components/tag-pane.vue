@@ -50,6 +50,8 @@
     position: relative;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: var(--dl-space-space-twounits);
+    margin-bottom: var(--dl-space-space-twounits);
   }
   .tag-pane-container {
     flex: 0 0 auto;
