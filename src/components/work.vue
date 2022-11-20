@@ -37,7 +37,7 @@ export default {
       default: 'My Work',
     },
     projects: {
-        type: Object
+        type: Array
     },
     text21: {
       type: String,
