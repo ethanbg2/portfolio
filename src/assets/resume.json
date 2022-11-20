@@ -8,13 +8,6 @@
       "url": "https://ethangrinberg.netlify.app/",
       "resume_url": "https://docs.google.com/document/d/1hI4xo5BDCiqm8rjPqlC2n26F9glB9UkavpYrbu4yO-s/export?format=pdf",
       "summary": "Full Stack Developer, Data Scientist, and Researcher",
-      "location": {
-        "address": "2712 Broadway St",
-        "postalCode": "CA 94115",
-        "city": "San Francisco",
-        "countryCode": "US",
-        "region": "California"
-      },
       "profiles": [{
         "network": "Twitter",
         "username": "john",
@@ -40,17 +33,6 @@
         "Started the company"
       ]
     }],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }],
     "education": [{
       "institution": "University",
       "url": "https://institution.com/",
@@ -69,82 +51,66 @@
       "awarder": "Company",
       "summary": "There is no spoon."
     }],
-    "certificates": [{
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
-    }],
-    "languages": [{
-      "language": "English",
-      "fluency": "Native speaker"
-    }],
-    "interests": [{
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }],
     "projects": [{
-      "name": "Misinformation",
+      "name": "Product Cupid",
+      "type": "Web App",
       "description": "Description…",
-      "highlights": [
-        "Won award at AIHacks 2016"
+      "date": "May 2021",
+      "skills": [
+        "Python",
+        "Java",
+        "React.js"
       ],
-      "keywords": [
-        "HTML"
+      "images": [
+        "profile.jpg",
+        "profile.jpg",
+        "profile.jpg"
       ],
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "url": "https://project.com/",
-      "image": "profile.jpg",
-      "roles": [
-        "Team Lead"
+      "contributions": [
+        "task 1",
+        "task 2",
+        "task 3"
       ],
-      "type": "data science"
+      "links": [
+        {
+          "text": "test",
+          "url": "https://www.google.com"
+        },
+        {
+          "text": "test 2",
+          "url": "https://ethangrinberg.netlify.app/"
+        }
+      ]
     },
     {
-        "name": "Positivity Journal",
-        "description": "Description…",
-        "highlights": [
-          "Won award at AIHacks 2016"
-        ],
-        "keywords": [
-          "HTML"
-        ],
-        "startDate": "2019-01-01",
-        "endDate": "2021-01-01",
-        "url": "https://project.com/",
-        "image": "profile.jpg",
-        "roles": [
-          "Team Lead"
-        ],
-        "type": "mobile application"
-      },
-      {
-        "name": "Meal Planner",
-        "description": "Description…",
-        "highlights": [
-          "Won award at AIHacks 2016"
-        ],
-        "keywords": [
-          "HTML"
-        ],
-        "startDate": "2019-01-01",
-        "endDate": "2021-01-01",
-        "url": "https://project.com/",
-        "image": "profile.jpg",
-        "roles": [
-          "Team Lead"
-        ],
-        "type": "web application"
-      }]
+      "name": "Misinformation",
+      "type": "Data Science",
+      "description": "Description…",
+      "date": "May 2021",
+      "skills": [
+        "Python",
+        "Java",
+        "React.js"
+      ],
+      "images": [
+        "profile.jpg",
+        "profile.jpg",
+        "profile.jpg"
+      ],
+      "contributions": [
+        "task 1",
+        "task 2",
+        "task 3"
+      ],
+      "links": [
+        {
+          "text": "test",
+          "url": "https://www.google.com"
+        },
+        {
+          "text": "test 2",
+          "url": "https://ethangrinberg.netlify.app/"
+        }
+      ]
+    }]
   }

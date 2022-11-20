@@ -2,7 +2,7 @@
     <div class="project-gallary-container">
       <project-card 
         v-for="item in projects"
-        :image_src="require(`@/assets/${item.image}`)"
+        :image_src="require(`@/assets/${item.images[0]}`)"
         :heading="item.name"
         :text="item.type"
       >

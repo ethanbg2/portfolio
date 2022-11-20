@@ -8,7 +8,10 @@
     <div class="tag-pane-container">
       <app-tag v-for="item in resume.top_skills" :button="item.name"></app-tag>
     </div>
-    <Work :projects="resume.projects"></Work>
+    <Work :resume="resume"></Work>
+    <div class="button-container">
+      <AppButton button="Learn More About Me!"></AppButton>
+    </div>
     <app-footer></app-footer>
   </div>
 </template>
@@ -62,6 +65,10 @@ export default {
   align-self: center;
   align-items: center;
   justify-content: center;
+}
+
+.button-container {
+  margin-top: var(--dl-space-space-twounits);
 }
 
 </style>

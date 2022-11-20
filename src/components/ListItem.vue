@@ -18,7 +18,7 @@
       text: {
         type: String,
         default:
-          'a;lskdjf;laksjdf;lakjsdf;lk jk j;alkjd;flkj a;ksjd  ;lkajsd;lfkja ;lsk j ;alksjdflk j',
+          'list item',
       },
       rootClassName: String,
     },

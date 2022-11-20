@@ -9,7 +9,7 @@
       <span class="work-text04">{{ text1 }}</span>
       <br />
     </h2>
-    <project-gallary :projects="projects"></project-gallary>
+    <project-gallary :projects="resume.projects"></project-gallary>
     <h2 id="experience" class="work-heading">
       <span class="work-text06">{{ text211 }}</span>
       <br />
@@ -36,8 +36,8 @@ export default {
       type: String,
       default: 'My Work',
     },
-    projects: {
-        type: Array
+    resume: {
+        type: Object
     },
     text21: {
       type: String,
