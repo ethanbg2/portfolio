@@ -39,17 +39,17 @@
       <div class="project-page-separator"></div>
       <div class="project-page-container05">
         <img
-          src="https://play.teleporthq.io/static/svg/default-img.svg"
+          :src="require(`@/assets/${this_project.images[0]}`)"
           alt="image"
           class="project-page-image"
         />
         <img
-          src="https://play.teleporthq.io/static/svg/default-img.svg"
+          :src="require(`@/assets/${this_project.images[1]}`)"
           alt="image"
           class="project-page-image1"
         />
         <img
-          src="https://play.teleporthq.io/static/svg/default-img.svg"
+          :src="require(`@/assets/${this_project.images[2]}`)"
           alt="image"
           class="project-page-image2"
         />
@@ -89,7 +89,7 @@
           rel="noreferrer noopener"
           class="project-page-link"
         >
-        {{item.text}}
+          {{item.text}}
         </a>
       </div>
     </div>
