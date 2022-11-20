@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "core-js": "^3.26.0",
+    "json-query": "^2.2.2",
     "vue": "^2.6.7",
     "vue-meta": "^2.2.1",
     "vue-router": "^3.0.2",
