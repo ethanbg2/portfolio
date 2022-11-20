@@ -1,7 +1,7 @@
 <template>
     <div class="course-card-pane-container" v-bind:class="rootClassName">
       <div class="course-card-pane-container1">
-        <course-card rootClassName="course-card-root-class-name4"></course-card>
+        <course-card name="probability and statistics for computer science"></course-card>
         <course-card rootClassName="course-card-root-class-name1"></course-card>
         <course-card rootClassName="course-card-root-class-name2"></course-card>
         <course-card rootClassName="course-card-root-class-name3"></course-card>
