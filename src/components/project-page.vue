@@ -1,14 +1,18 @@
 <template>
   <div class="project-page-container">
     <app-header></app-header>
-    <h1 v-if="!this_project"> Project Not Found </h1>
-    <h1 v-else > {{this_project}} </h1>
+    <div class="project-page-container1">
+      <h1 class="project-page-text"> {{this_project}} </h1>
+      <list-item rootClassName="list-item-root-class-name2"></list-item>
+      <list-item rootClassName="list-item-root-class-name3"></list-item>
+    </div>
     <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import AppHeader from './header'
+import ListItem from './ListItem'
 import AppFooter from './footer'
 import resume from '@/assets/resume.json'
 
@@ -20,6 +24,7 @@ export default {
   props: {},
   components: {
     AppHeader,
+    ListItem,
     AppFooter,
   },
   created () {
@@ -43,7 +48,35 @@ export default {
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
   background-color: var(--dl-color-darkmode-base);
+}
+.project-page-container1 {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  margin-top: var(--dl-space-space-threeunits);
+  align-items: flex-start;
+  margin-left: 0%;
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+}
+.project-page-text {
+  color: var(--dl-color-gray-white);
+  font-size: 4rem;
+  align-self: flex-start;
+}
+@media(max-width: 1600px) {
+  .project-page-container1 {
+    width: 70%;
+    align-self: center;
+  }
+}
+@media(max-width: 1200px) {
+  .project-page-container1 {
+    align-self: center;
+  }
 }
 </style>
