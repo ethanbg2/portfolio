@@ -57,6 +57,11 @@
       "description": "Description…",
       "date": "May 2021",
       "image": "profile.jpg",
+      "skills": [
+        "Python",
+        "Java",
+        "React.js"
+      ],
       "images": [
         "profile.jpg",
         "profile.jpg",

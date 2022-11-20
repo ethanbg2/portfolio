@@ -1,6 +1,6 @@
 <template>
     <div class="static-tag-container" v-bind:class="rootClassName">
-      <button class="static-tag-button button">{{ button }}</button>
+      <button class="static-tag-button button">{{ text }}</button>
     </div>
   </template>
   
@@ -8,7 +8,7 @@
   export default {
     name: 'StaticTag',
     props: {
-      button: {
+      text: {
         type: String,
         default: 'Button',
       },

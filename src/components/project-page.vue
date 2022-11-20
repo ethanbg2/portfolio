@@ -29,11 +29,7 @@
       <div class="project-page-container03">
         <span class="project-page-text09">Skills:</span>
         <div class="project-page-container04">
-          <static-tag rootClassName="static-tag-root-class-name"></static-tag>
-          <static-tag rootClassName="static-tag-root-class-name1"></static-tag>
-          <static-tag rootClassName="static-tag-root-class-name2"></static-tag>
-          <static-tag rootClassName="static-tag-root-class-name3"></static-tag>
-          <static-tag rootClassName="static-tag-root-class-name4"></static-tag>
+          <static-tag v-for="item in this_project.skills" :text="item"></static-tag>
         </div>
       </div>
       <div class="project-page-separator"></div>
