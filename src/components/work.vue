@@ -18,12 +18,14 @@
       <span class="work-text09">{{ text21 }}</span>
       <br />
     </h2>
+    <course-card-pane></course-card-pane>
   </div>
 </template>
 
 <script>
 import TagPane from './tag-pane'
 import ProjectGallary from './project-gallary'
+import CourseCardPane from './CourseCardPane';
 
 export default {
   name: 'Work',
@@ -52,6 +54,7 @@ export default {
   components: {
     TagPane,
     ProjectGallary,
+    CourseCardPane
   },
 }
 </script>
