@@ -1,8 +1,8 @@
 <template>
     <div class="experience-card-pane-container" v-bind:class="rootClassName">
       <div class="experience-card-pane-container1">
-        <ExperienceCard></ExperienceCard>
-        <ExperienceCard></ExperienceCard>
+        <ExperienceCard name="Media and Advertising Lab UIUC"></ExperienceCard>
+        <ExperienceCard name="Media and Advertising Lab UIUC"></ExperienceCard>
       </div>
     </div>
   </template>

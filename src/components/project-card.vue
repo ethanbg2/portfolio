@@ -1,12 +1,10 @@
 <template>
-      <router-link :to="`project/${heading}`" class="project-card-container">
-        <img :src="image_src" :alt="image_alt" class="project-card-image" />
-    <h1 class="project-card-text">{{ heading }}</h1>
+  <router-link :to="`project/${heading}`" class="project-card-container">
+    <img :alt="image_alt" :src="image_src" class="project-card-image" />
+    <h2 class="project-card-text">{{heading}}</h2>
     <span class="project-card-text1">{{ text }}</span>
-    <svg viewBox="0 0 1024 1024" class="project-card-icon">
-      <path d="M708 366l60 60-256 256-256-256 60-60 196 196z"></path>
-    </svg>
-    </router-link>
+    <span class="project-card-text2">SEE MORE</span>
+  </router-link>
 </template>
 
 <script>
@@ -45,37 +43,42 @@ export default {
   margin-top: var(--dl-space-space-twounits);
   align-items: center;
   margin-left: var(--dl-space-space-twounits);
-  border-color: var(--dl-color-gray-white);
-  border-style: solid;
-  border-width: 8px;
   margin-right: var(--dl-space-space-twounits);
   border-radius: var(--dl-radius-radius-radius8);
   margin-bottom: var(--dl-space-space-twounits);
   flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-gray-white);
 }
 .project-card-image {
-  width: var(--dl-size-size-xxlarge);
+  width: 305px;
   height: var(--dl-size-size-xxlarge);
   align-self: center;
   object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius8);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .project-card-text {
-  color: var(--dl-color-gray-white);
-  width: 100%;
+  color: var(--dl-color-darkmode-base);
   align-self: center;
+  font-style: normal;
+  margin-top: var(--dl-space-space-halfunit);
   text-align: center;
+  font-weight: 500;
+  margin-bottom: var(--dl-space-space-halfunit);
 }
 .project-card-text1 {
-  color: var(--dl-color-gray-white);
+  color: var(--dl-color-darkmode-base);
   width: 100%;
   align-self: center;
   text-align: center;
 }
-.project-card-icon {
-  fill: var(--dl-color-gray-white);
-  width: 24px;
-  height: 24px;
+.project-card-text2 {
+  color: var(--dl-color-darkmode-base);
+  font-size: 0.75rem;
   margin-top: var(--dl-space-space-halfunit);
+  font-weight: 500;
 }
 
 
