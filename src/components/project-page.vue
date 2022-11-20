@@ -3,7 +3,7 @@
     <app-header></app-header>
     <div class="project-page-container01">
       <h1 class="project-page-text">
-        <span>{{this_project}}</span>
+        <span>{{this_project.name}}</span>
         <br />
       </h1>
       <div class="project-page-container02">
@@ -13,7 +13,7 @@
           ></path>
         </svg>
         <span class="project-page-text03">
-          <span>Jul 2020</span>
+          <span>{{this_project.date}}</span>
           <br />
         </span>
         <svg viewBox="0 0 1024 1024" class="project-page-icon2">
@@ -22,7 +22,7 @@
           ></path>
         </svg>
         <span class="project-page-text06">
-          <span>Mobile Application</span>
+          <span>{{this_project.type}}</span>
           <br />
         </span>
       </div>
@@ -56,8 +56,7 @@
       </div>
       <span class="project-page-text10">
         <span>
-          here is a short description of the project that will  give an overview
-          and put everything into context
+          {{this_project.description}}
         </span>
         <br />
       </span>
@@ -70,8 +69,7 @@
         <h2 class="project-page-text13">Contributions</h2>
       </div>
       <div class="project-page-container07">
-        <list-item rootClassName="list-item-root-class-name2"></list-item>
-        <list-item rootClassName="list-item-root-class-name3"></list-item>
+        <list-item v-for="item in this_project.contributions" :text="item"></list-item>
       </div>
       <div class="project-page-container08">
         <svg viewBox="0 0 1024 1024" class="project-page-icon6">
@@ -85,29 +83,13 @@
         </h2>
       </div>
       <div class="project-page-container09">
-        <a
-          href="https://google.com"
+        <a v-for="item in this_project.links" 
+          :href="item.url"
           target="_blank"
           rel="noreferrer noopener"
           class="project-page-link"
         >
-          Link
-        </a>
-        <a
-          href="https://google.com"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="project-page-link1"
-        >
-          Link
-        </a>
-        <a
-          href="https://google.com"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="project-page-link2"
-        >
-          Link
+        {{item.text}}
         </a>
       </div>
     </div>
@@ -138,7 +120,7 @@ export default {
     const name = this.$route.params.id
     for (const [_, project] of Object.entries(resume.projects)) {
       if (name == project.name) {
-        this.this_project = name
+        this.this_project = project
         break
       }
     }
