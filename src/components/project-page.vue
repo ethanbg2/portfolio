@@ -1,12 +1,12 @@
 <template>
   <div class="project-page-container">
     <app-header></app-header>
-    <div class="project-page-container1">
+    <div class="project-page-container01">
       <h1 class="project-page-text">
         <span>{{this_project}}</span>
         <br />
       </h1>
-      <div class="project-page-container2">
+      <div class="project-page-container02">
         <svg viewBox="0 0 1024 1024" class="project-page-icon">
           <path
             d="M658.744 749.256l-210.744-210.746v-282.51h128v229.49l173.256 173.254zM512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 896c-212.078 0-384-171.922-384-384s171.922-384 384-384c212.078 0 384 171.922 384 384s-171.922 384-384 384z"
@@ -26,9 +26,9 @@
           <br />
         </span>
       </div>
-      <div class="project-page-container3">
+      <div class="project-page-container03">
         <span class="project-page-text09">Skills:</span>
-        <div class="project-page-container4">
+        <div class="project-page-container04">
           <static-tag rootClassName="static-tag-root-class-name"></static-tag>
           <static-tag rootClassName="static-tag-root-class-name1"></static-tag>
           <static-tag rootClassName="static-tag-root-class-name2"></static-tag>
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="project-page-separator"></div>
-      <div class="project-page-container5">
+      <div class="project-page-container05">
         <img
           src="https://play.teleporthq.io/static/svg/default-img.svg"
           alt="image"
@@ -61,13 +61,54 @@
         </span>
         <br />
       </span>
-      <h2 class="project-page-text13">
-        <span>Contributions</span>
-        <br />
-      </h2>
-      <div class="project-page-container6">
+      <div class="project-page-container06">
+        <svg viewBox="0 0 1024 1024" class="project-page-icon4">
+          <path
+            d="M810 854v-684h-84v128h-428v-128h-84v684h596zM512 86q-18 0-30 12t-12 30 12 30 30 12 30-12 12-30-12-30-30-12zM810 86q34 0 60 25t26 59v684q0 34-26 59t-60 25h-596q-34 0-60-25t-26-59v-684q0-34 26-59t60-25h178q14-38 46-62t74-24 74 24 46 62h178z"
+          ></path>
+        </svg>
+        <h2 class="project-page-text13">Contributions</h2>
+      </div>
+      <div class="project-page-container07">
         <list-item rootClassName="list-item-root-class-name2"></list-item>
         <list-item rootClassName="list-item-root-class-name3"></list-item>
+      </div>
+      <div class="project-page-container08">
+        <svg viewBox="0 0 1024 1024" class="project-page-icon6">
+          <path
+            d="M804.571 530.286v182.857c0 90.857-73.714 164.571-164.571 164.571h-475.429c-90.857 0-164.571-73.714-164.571-164.571v-475.429c0-90.857 73.714-164.571 164.571-164.571h402.286c10.286 0 18.286 8 18.286 18.286v36.571c0 10.286-8 18.286-18.286 18.286h-402.286c-50.286 0-91.429 41.143-91.429 91.429v475.429c0 50.286 41.143 91.429 91.429 91.429h475.429c50.286 0 91.429-41.143 91.429-91.429v-182.857c0-10.286 8-18.286 18.286-18.286h36.571c10.286 0 18.286 8 18.286 18.286zM1024 36.571v292.571c0 20-16.571 36.571-36.571 36.571-9.714 0-18.857-4-25.714-10.857l-100.571-100.571-372.571 372.571c-3.429 3.429-8.571 5.714-13.143 5.714s-9.714-2.286-13.143-5.714l-65.143-65.143c-3.429-3.429-5.714-8.571-5.714-13.143s2.286-9.714 5.714-13.143l372.571-372.571-100.571-100.571c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h292.571c20 0 36.571 16.571 36.571 36.571z"
+          ></path>
+        </svg>
+        <h2 class="project-page-text14">
+          <span>Links</span>
+          <br />
+        </h2>
+      </div>
+      <div class="project-page-container09">
+        <a
+          href="https://google.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="project-page-link"
+        >
+          Link
+        </a>
+        <a
+          href="https://google.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="project-page-link1"
+        >
+          Link
+        </a>
+        <a
+          href="https://google.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="project-page-link2"
+        >
+          Link
+        </a>
       </div>
     </div>
     <app-footer></app-footer>
@@ -116,7 +157,7 @@ export default {
   flex-direction: column;
   background-color: var(--dl-color-darkmode-base);
 }
-.project-page-container1 {
+.project-page-container01 {
   width: 100%;
   height: auto;
   display: flex;
@@ -135,7 +176,7 @@ export default {
   font-size: 2rem;
   align-self: flex-start;
 }
-.project-page-container2 {
+.project-page-container02 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -166,7 +207,7 @@ export default {
   align-self: center;
   margin-left: 4px;
 }
-.project-page-container3 {
+.project-page-container03 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -183,7 +224,7 @@ export default {
   margin-left: 0px;
   margin-bottom: 0px;
 }
-.project-page-container4 {
+.project-page-container04 {
   flex: 0 0 auto;
   width: 90%;
   height: auto;
@@ -211,7 +252,7 @@ export default {
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.project-page-container5 {
+.project-page-container05 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -251,29 +292,99 @@ export default {
   margin-top: var(--dl-space-space-twounits);
   margin-left: 0px;
 }
+.project-page-container06 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.project-page-icon4 {
+  fill: var(--dl-color-gray-white);
+  width: 24px;
+  height: 24px;
+}
 .project-page-text13 {
   color: var(--dl-color-gray-white);
   font-size: 1.5rem;
-  align-self: flex-start;
-  margin-top: var(--dl-space-space-twounits);
-  margin-bottom: var(--dl-space-space-halfunit);
+  align-self: center;
+  margin-top: 0px;
+  margin-left: var(--dl-space-space-halfunit);
+  margin-bottom: 0px;
 }
-.project-page-container6 {
+.project-page-container07 {
   flex: 0 0 auto;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-bottom: var(--dl-space-space-twounits);
   flex-direction: column;
 }
+.project-page-container08 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.project-page-icon6 {
+  fill: var(--dl-color-gray-white);
+  width: 24px;
+  height: 24px;
+  align-self: center;
+}
+.project-page-text14 {
+  color: var(--dl-color-gray-white);
+  font-size: 1.5rem;
+  align-self: center;
+  margin-top: 0px;
+  margin-left: var(--dl-space-space-halfunit);
+  margin-bottom: 0px;
+}
+.project-page-container09 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--dl-space-space-unit);
+  align-items: flex-start;
+  flex-direction: column;
+}
+.project-page-link {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.project-page-link:hover {
+  color: var(--dl-color-darkmode-4);
+}
+.project-page-link1 {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.project-page-link1:hover {
+  color: var(--dl-color-darkmode-4);
+}
+.project-page-link2 {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.project-page-link2:hover {
+  color: var(--dl-color-darkmode-4);
+}
 @media(max-width: 1600px) {
-  .project-page-container1 {
+  .project-page-container01 {
     width: 100%;
     align-self: center;
   }
 }
 @media(max-width: 1200px) {
-  .project-page-container1 {
+  .project-page-container01 {
     align-self: center;
   }
 }
@@ -291,17 +402,17 @@ export default {
   }
 }
 @media(max-width: 479px) {
-  .project-page-container2 {
+  .project-page-container02 {
     margin-bottom: 0px;
   }
-  .project-page-container4 {
+  .project-page-container04 {
     width: 90%;
   }
   .project-page-separator {
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .project-page-container5 {
+  .project-page-container05 {
     justify-content: center;
   }
   .project-page-image1 {
