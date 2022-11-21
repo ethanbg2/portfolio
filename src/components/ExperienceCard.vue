@@ -121,6 +121,16 @@
     margin-top: var(--dl-space-space-unit);
     font-weight: 500;
   }
+
+  @media(max-width: 479px) {
+    .experience-card-container {
+      width: 100%;
+      margin-top: var(--dl-space-space-unit);
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+  }
   
   
   </style>

@@ -6,44 +6,50 @@
         :date="item.date" 
         :position="item.position">
         </ExperienceCard>
-      </div>
     </div>
-  </template>
-  
-  <script>
+  </div>
+</template>
+
+<script>
   import ExperienceCard from './ExperienceCard'
-  
-  export default {
+
+export default {
     name: 'ExperienceCardPane',
-    props: {
-      rootClassName: String,
-      experiences: Array
-    },
-    components: {
-      ExperienceCard,
-    },
-  }
-  </script>
-  
-  <style scoped>
-  .experience-card-pane-container {
+  props: {
+    rootClassName: String,
+    experiences: Array
+  },
+  components: {
+    ExperienceCard,
+  },
+}
+</script>
+
+<style scoped>
+.experience-pane-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.experience-pane-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media(max-width: 479px) {
+  .experience-pane-container {
     width: 100%;
-    height: auto;
-    display: flex;
-    position: relative;
-    align-items: flex-start;
-    flex-direction: column;
+    max-width: var(--dl-size-size-maxwidth);
   }
-  .experience-card-pane-container1 {
-    flex: 0 0 auto;
+  .experience-pane-container1 {
     width: 100%;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
     align-self: center;
-    align-items: center;
-    justify-content: center;
   }
-  
-  </style>
-  
+}
+</style>
