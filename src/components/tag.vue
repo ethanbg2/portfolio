@@ -4,11 +4,19 @@ Button
 
 <template>
   <div class="tag-container" v-bind:class="rootClassName">
-    <button 
-    v-bind:class="{'tag-button button': !clicked, 'tag-button-clicked button': clicked}" 
-    v-on:click="onClick"
-    >
-      {{ button }} 
+    <router-link v-if="!clicked" :to="{name: 'Work', hash:'#projects'}">
+      <button 
+        v-bind:class="{'tag-button button': !clicked, 'tag-button-clicked button': clicked}" 
+        v-on:click="onClick"
+        >
+          {{ button }} 
+      </button>
+    </router-link>
+    <button v-else
+        v-bind:class="{'tag-button button': !clicked, 'tag-button-clicked button': clicked}" 
+        v-on:click="onClick"
+        >
+          {{ button }} 
     </button>
   </div>
 </template>
