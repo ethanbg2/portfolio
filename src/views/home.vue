@@ -5,7 +5,6 @@
       :image_src="require(`@/assets/${resume.basics.image}`)" 
       :bio="resume.basics.summary" :button_link="resume.basics.resume_url"> 
     </app-hero>
-    <Work :resume="resume"></Work>
     <div class="button-container">
       <AppButton button="Learn More About Me!"></AppButton>
     </div>
@@ -20,7 +19,6 @@ import AppTag from '../components/tag'
 import ProjectGallary from '../components/project-gallary'
 import AppButton from '../components/button'
 import AppFooter from '../components/footer'
-import Work from '../components/work'
 import resume from '@/assets/resume.json'
 
 export default {
@@ -35,8 +33,7 @@ export default {
     AppTag,
     ProjectGallary,
     AppButton,
-    AppFooter,
-    Work
+    AppFooter
   }
 }
 </script>

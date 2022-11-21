@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Meta from 'vue-meta'
 
 import Home from './views/home'
+import Work from './views/work'
 import ProjectPage from './components/project-page'
 import './style.css'
 
@@ -15,6 +16,11 @@ export default new Router({
       name: 'Home',
       path: '/',
       component: Home,
+    },
+    {
+      name: "Work",
+      path: '/work',
+      component: Work
     },
     {
       name: 'Project',
