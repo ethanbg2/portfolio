@@ -9,17 +9,17 @@
       <span class="work-text04">{{ text1 }}</span>
       <br />
     </h2>
-    <project-gallary :projects="resume.projects"></project-gallary>
+    <project-gallary :projects="current_projects"></project-gallary>
     <h2 id="experience" class="work-heading">
       <span class="work-text06">{{ text211 }}</span>
       <br />
     </h2>
-    <experience-card-pane></experience-card-pane>
+    <experience-card-pane :experiences="current_work"></experience-card-pane>
     <h2 id="courses" class="work-text08">
       <span class="work-text09">{{ text21 }}</span>
       <br />
     </h2>
-    <course-card-pane></course-card-pane>
+    <course-card-pane :courses="current_courses"></course-card-pane>
   </div>
 </template>
 
@@ -62,20 +62,51 @@ export default {
   data() {
     return {queries: new Set(), 
             jsonQuery: require('json-query'), 
-            skills: new Set()}
+            skills: new Set(),
+            current_projects: this.resume.projects,
+            current_courses: this.resume.courses,
+            current_work: this.resume.work
+            }
   },
   created() {
     console.log("created")
+    // compile all skills
     var project_skills = this.jsonQuery('projects.skills', {
       data: this.resume
     }).value
     var work_skills = this.jsonQuery('work.skills', {
       data: this.resume
     }).value
+    var school_skills = this.jsonQuery('courses.skills', {
+      data: this.resume
+    }).value
 
-    this.skills = new Set([...project_skills, ...work_skills])
+    var test = this.jsonQuery('courses.skills', {
+      data: this.resume
+    })
+    console.log(test.references)
+
+    this.skills = new Set([...project_skills, ...work_skills, ...school_skills])
   },
+
   methods: {
+    updateSelections() {
+      var filter_by_query = function(query, element) {
+          var skills = element.skills
+          for (var i = 0; i < skills.length; i++) {
+            var item = skills[i]
+            if (query.includes(item)) {
+              return true
+            }
+          }
+          return false
+      }
+
+      this.current_projects = this.resume.projects.filter(filter_by_query.bind(this, [...this.queries]))
+      this.current_courses = this.resume.courses.filter(filter_by_query.bind(this, [...this.queries]))
+      this.current_work = this.resume.work.filter(filter_by_query.bind(this, [...this.queries]))
+    },
+
     onTagClick(value) {
       const first = value[0]
       if (first == "!") {
@@ -84,8 +115,16 @@ export default {
       } else {
         this.queries.add(value)
       }
-      console.log(this.queries)
+
+      if (this.queries.size == 0) {
+        this.current_projects= this.resume.projects,
+        this.current_courses= this.resume.courses,
+        this.current_work= this.resume.work
+      } else {
+        this.updateSelections()
+      }
     }
+
   }
 }
 </script>
@@ -99,7 +138,7 @@ export default {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: var(--dl-space-space-fourunits);
+    margin-top: var(--dl-space-space-sixunits);
     background-color: var(--dl-color-darkmode-base);
 }
 .work-text {

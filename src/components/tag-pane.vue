@@ -5,6 +5,8 @@
                 Filter By Skills
             </v-expansion-panel-header>
             <v-expansion-panel-content color="var(--dl-color-darkmode-base)">
+              <info text="Click on a skill to show all the projects, work, and courses I used that skill in"></info>
+
                 <div class="tag-pane-container">
                 <app-tag @clicked="onTagClick" v-for="item in tags" :button="item"></app-tag>
                 </div>
@@ -16,6 +18,7 @@
   
   <script>
   import AppTag from './tag'
+  import Info from './Info';
   
   export default {
     name: 'TagPane',
@@ -26,6 +29,7 @@
     },
     components: {
       AppTag,
+      Info
     },
     methods: {
       onTagClick(value) {

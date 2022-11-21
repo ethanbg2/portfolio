@@ -29,7 +29,7 @@
   }
   .static-tag-button {
     color: var(--dl-color-primary-700);
-    width: 80px;
+    width: auto;
     padding: 4px;
     align-self: center;
     border-width: 0px;

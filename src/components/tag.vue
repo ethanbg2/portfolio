@@ -58,7 +58,7 @@ export default {
 
 .tag-button {
   color: var(--dl-color-primary-700);
-  width: var(--dl-size-size-medium);
+  width: auto;
   align-self: center;
   transition: 0.3s;
   border-width: 0px;
@@ -70,7 +70,7 @@ export default {
   background-color: rgba(133, 220, 255, 0.8);
 }
 .tag-button-clicked {
-    width: var(--dl-size-size-medium);
+    width: auto;
     align-self: center;
     transition: 0.3s;
     border-width: 0px;

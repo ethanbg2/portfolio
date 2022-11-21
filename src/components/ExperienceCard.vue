@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="`project/${name}`" class="experience-card-container">
+    <router-link :to="`project/${company}`" class="experience-card-container">
       <div class="experience-card-feature-card">
         <div class="experience-card-container1">
           <svg viewBox="0 0 1024 1024" class="experience-card-icon">
@@ -8,19 +8,19 @@
             ></path>
           </svg>
           <span class="experience-card-text">
-            <span>May 2021 - Aug 2022</span>
+            <span>{{date}}</span>
             <br />
           </span>
         </div>
         <h2 class="experience-card-text03">
           <span>
-            Undergraduate Research Assistant 
+            {{position}}
             <span v-html="raw498c"></span>
           </span>
           <br />
         </h2>
         <span class="experience-card-text06">
-          <span>{{name}}</span>
+          <span>{{company}}</span>
           <br />
         </span>
         <span class="experience-card-text09">SEE MORE</span>
@@ -33,9 +33,17 @@
     name: 'ExperienceCard',
     props: {
       rootClassName: String,
-      name: {
+      company: {
         type: String,
         default: "Apple"
+      },
+      date: {
+        type: String,
+        default: "May 2021 - May 2022"
+      },
+      position: {
+        type: String,
+        default: "Software Engineer"
       }
     },
   
@@ -112,6 +120,16 @@
     font-size: 0.75rem;
     margin-top: var(--dl-space-space-unit);
     font-weight: 500;
+  }
+
+  @media(max-width: 479px) {
+    .experience-card-container {
+      width: 100%;
+      margin-top: var(--dl-space-space-unit);
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-unit);
+    }
   }
   
   
