@@ -23,11 +23,38 @@
         "name": "Java"
     }],
     "work": [{
-      "name": "Company",
-      "position": "President",
+      "company": "Media and Advertising Lab UIUC",
+      "position": "Undergraduate Research Assistant",
       "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
+      "date": "May 2021 - Aug 2022",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ],
+      "skills": [
+        "XML",
+        "React.js"
+      ]
+    },
+    {
+      "company": "Media and Advertising Lab UIUC",
+      "position": "Undergraduate Research Assistant",
+      "url": "https://company.com",
+      "date": "May 2021 - Aug 2022",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ],
+      "skills": [
+        "XML",
+        "React.js"
+      ]
+    },
+    {
+      "company": "Media and Advertising Lab UIUC",
+      "position": "Undergraduate Research Assistant",
+      "url": "https://company.com",
+      "date": "May 2021 - Aug 2022",
       "summary": "Description…",
       "highlights": [
         "Started the company"
@@ -123,6 +150,27 @@
         "skills": [
           "Redis",
           "Flask"
+        ]
+      },
+      {
+        "name": "Algorithms",
+        "skills": [
+          "Problem Solving",
+          "Coding"
+        ]
+      },
+      {
+        "name": "Systems Programming",
+        "skills": [
+          "Problem Solving",
+          "Coding"
+        ]
+      },
+      {
+        "name": "Probability/Statistics",
+        "skills": [
+          "Problem Solving",
+          "Coding"
         ]
       }
     ]
