@@ -5,9 +5,6 @@
       :image_src="require(`@/assets/${resume.basics.image}`)" 
       :bio="resume.basics.summary" :button_link="resume.basics.resume_url"> 
     </app-hero>
-    <div class="button-container">
-      <AppButton button="Learn More About Me!"></AppButton>
-    </div>
     <app-footer></app-footer>
   </div>
 </template>

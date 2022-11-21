@@ -11,11 +11,16 @@
         </span>
         <br />
       </span>
-      <app-button
-        button="Download Resume"
-        :link="button_link"
-        rootClassName="button-root-class-name1"
-      ></app-button>
+      <div class="hero-container1">
+        <app-button
+          button="Download Resume"
+          :link="button_link"
+          rootClassName="button-root-class-name1"
+        ></app-button>
+      <div class="button-container1">
+        <app-button button="Check Out My Work" router="work"></app-button>
+      </div>
+      </div>
     </div>
     <img id="profile" :alt="image_alt" :src="image_src" class="hero-image" />
   </div>
@@ -90,10 +95,20 @@ export default {
   font-weight: 600;
   margin-bottom: var(--dl-space-space-twounits);
 }
+.hero-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
 .hero-image {
   width: var(--dl-size-size-xxlarge);
   object-fit: cover;
   border-radius: var(--dl-radius-radius-radius8);
+}
+.button-container1 {
+  margin-left: var(--dl-space-space-unit);
 }
 @media(max-width: 1600px) {
   .hero-container {
