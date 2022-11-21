@@ -332,12 +332,13 @@ export default {
   flex-direction: column;
 }
 .project-page-link {
-  color: var(--dl-color-gray-white);
+  color: var(--dl-color-darkmode-4);
   transition: 0.3s;
   margin-bottom: var(--dl-space-space-halfunit);
+  text-decoration: underline;
 }
 .project-page-link:hover {
-  color: var(--dl-color-darkmode-4);
+  color: var(--dl-color-gray-white);
 }
 .project-page-link1 {
   color: var(--dl-color-gray-white);
