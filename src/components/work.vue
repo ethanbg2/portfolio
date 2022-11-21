@@ -81,9 +81,32 @@ export default {
       data: this.resume
     }).value
 
+    var test = this.jsonQuery('courses.skills', {
+      data: this.resume
+    })
+    console.log(test.references)
+
     this.skills = new Set([...project_skills, ...work_skills, ...school_skills])
   },
+
   methods: {
+    updateSelections() {
+      var filter_by_query = function(query, element) {
+          var skills = element.skills
+          for (var i = 0; i < skills.length; i++) {
+            var item = skills[i]
+            if (query.includes(item)) {
+              return true
+            }
+          }
+          return false
+      }
+
+      this.current_projects = this.resume.projects.filter(filter_by_query.bind(this, [...this.queries]))
+      this.current_courses = this.resume.courses.filter(filter_by_query.bind(this, [...this.queries]))
+      this.current_work = this.resume.work.filter(filter_by_query.bind(this, [...this.queries]))
+    },
+
     onTagClick(value) {
       const first = value[0]
       if (first == "!") {
@@ -92,8 +115,16 @@ export default {
       } else {
         this.queries.add(value)
       }
-      console.log(this.queries)
+
+      if (this.queries.size == 0) {
+        this.current_projects= this.resume.projects,
+        this.current_courses= this.resume.courses,
+        this.current_work= this.resume.work
+      } else {
+        this.updateSelections()
+      }
     }
+
   }
 }
 </script>
