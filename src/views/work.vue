@@ -1,5 +1,6 @@
 <template>
   <div class="work-container" v-bind:class="rootClassName">
+    <app-header></app-header>
     <h1 id="work" class="work-text">
       <span class="work-text01">{{ text }}</span>
       <br />
@@ -20,14 +21,18 @@
       <br />
     </h2>
     <course-card-pane :courses="current_courses"></course-card-pane>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import TagPane from './tag-pane'
-import ProjectGallary from './project-gallary'
-import CourseCardPane from './CourseCardPane'
-import ExperienceCardPane from './ExperienceCardPane'
+import TagPane from '../components/tag-pane'
+import ProjectGallary from '../components/project-gallary'
+import CourseCardPane from '../components/CourseCardPane'
+import ExperienceCardPane from '../components/ExperienceCardPane'
+import AppHeader from '../components/header'
+import AppFooter from '../components/footer'
+import resume from '@/assets/resume.json'
 
 export default {
   name: 'Work',
@@ -35,9 +40,6 @@ export default {
     text: {
       type: String,
       default: 'My Work',
-    },
-    resume: {
-        type: Object
     },
     text21: {
       type: String,
@@ -57,16 +59,20 @@ export default {
     TagPane,
     ProjectGallary,
     CourseCardPane,
-    ExperienceCardPane
+    ExperienceCardPane,
+    AppHeader,
+    AppFooter
   },
   data() {
-    return {queries: new Set(), 
+    return {
+            resume: resume,
+            queries: new Set(), 
             jsonQuery: require('json-query'), 
             skills: new Set(),
-            current_projects: this.resume.projects,
-            current_courses: this.resume.courses,
-            current_work: this.resume.work
-            }
+            current_projects: resume.projects,
+            current_courses: resume.courses,
+            current_work: resume.work
+          }
   },
   created() {
     console.log("created")
@@ -138,7 +144,6 @@ export default {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: var(--dl-space-space-sixunits);
     background-color: var(--dl-color-darkmode-base);
 }
 .work-text {
