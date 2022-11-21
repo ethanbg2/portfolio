@@ -138,7 +138,7 @@ export default {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: var(--dl-space-space-fourunits);
+    margin-top: var(--dl-space-space-sixunits);
     background-color: var(--dl-color-darkmode-base);
 }
 .work-text {

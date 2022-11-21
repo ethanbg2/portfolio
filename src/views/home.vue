@@ -5,9 +5,6 @@
       :image_src="require(`@/assets/${resume.basics.image}`)" 
       :bio="resume.basics.summary" :button_link="resume.basics.resume_url"> 
     </app-hero>
-    <div class="tag-pane-container">
-      <app-tag v-for="item in resume.top_skills" :button="item.name"></app-tag>
-    </div>
     <Work :resume="resume"></Work>
     <div class="button-container">
       <AppButton button="Learn More About Me!"></AppButton>
