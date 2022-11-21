@@ -116,5 +116,14 @@
           "url": "https://ethangrinberg.netlify.app/"
         }
       ]
-    }]
+    }],
+    "courses": [
+      {
+        "name": "Data Structures",
+        "skills": [
+          "Redis",
+          "Flask"
+        ]
+      }
+    ]
   }

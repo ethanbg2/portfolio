@@ -1,11 +1,7 @@
 <template>
     <div class="course-card-pane-container" v-bind:class="rootClassName">
       <div class="course-card-pane-container1">
-        <course-card name="Probability/Statistics"></course-card>
-        <course-card name="Data Structures"></course-card>
-        <course-card name="Algorithms"></course-card>
-        <course-card name="Systems Programming"></course-card>
-        <course-card rootClassName="course-card-root-class-name"></course-card>
+        <course-card v-for="item in courses" :name="item.name"></course-card>
       </div>
     </div>
   </template>
@@ -17,6 +13,7 @@
     name: 'CourseCardPane',
     props: {
       rootClassName: String,
+      courses: Array
     },
     components: {
       CourseCard,

@@ -1,7 +1,7 @@
 <template>
     <div class="experience-card-pane-container" v-bind:class="rootClassName">
       <div class="experience-card-pane-container1">
-        <ExperienceCard name="Media and Advertising Lab UIUC"></ExperienceCard>
+        <ExperienceCard v-for="item in experiences" :name="item.name"></ExperienceCard>
         <ExperienceCard name="Media and Advertising Lab UIUC"></ExperienceCard>
       </div>
     </div>
@@ -14,6 +14,7 @@
     name: 'ExperienceCardPane',
     props: {
       rootClassName: String,
+      experiences: Array
     },
     components: {
       ExperienceCard,
