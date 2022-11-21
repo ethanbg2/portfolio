@@ -6,23 +6,7 @@
             </v-expansion-panel-header>
             <v-expansion-panel-content color="var(--dl-color-darkmode-base)">
                 <div class="tag-pane-container">
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="c++" rootClassName="tag-root-class-name15"></app-tag>
-                <app-tag button="vue.js" rootClassName="tag-root-class-name17"></app-tag>
-                <app-tag button="MUI" rootClassName="tag-root-class-name18"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="Python" rootClassName="tag-root-class-name19"></app-tag>
-                <app-tag button="c++" rootClassName="tag-root-class-name15"></app-tag>
-                <app-tag button="react.js" rootClassName="tag-root-class-name16"></app-tag>
+                <app-tag @clicked="onTagClick" v-for="item in tags" :button="item"></app-tag>
                 </div>
             </v-expansion-panel-content>
         </v-expansion-panel>
@@ -35,10 +19,19 @@
   
   export default {
     name: 'TagPane',
-    props: {},
+    props: {
+      tags: {
+        type: Set
+      }
+    },
     components: {
       AppTag,
     },
+    methods: {
+      onTagClick(value) {
+        this.$emit("clicked", value)
+      }
+    }
   }
   </script>
   

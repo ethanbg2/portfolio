@@ -4,7 +4,7 @@
       <span class="work-text01">{{ text }}</span>
       <br />
     </h1>
-    <tag-pane rootClassName="tag-pane-root-class-name"></tag-pane>
+    <tag-pane @clicked="onTagClick" :tags="skills"></tag-pane>
     <h2 id="projects" class="work-text03">
       <span class="work-text04">{{ text1 }}</span>
       <br />
@@ -59,6 +59,34 @@ export default {
     CourseCardPane,
     ExperienceCardPane
   },
+  data() {
+    return {queries: new Set(), 
+            jsonQuery: require('json-query'), 
+            skills: new Set()}
+  },
+  created() {
+    console.log("created")
+    var project_skills = this.jsonQuery('projects.skills', {
+      data: this.resume
+    }).value
+    var work_skills = this.jsonQuery('work.skills', {
+      data: this.resume
+    }).value
+
+    this.skills = new Set([...project_skills, ...work_skills])
+  },
+  methods: {
+    onTagClick(value) {
+      const first = value[0]
+      if (first == "!") {
+        var tag = value.split("!")[1]
+        this.queries.delete(tag)
+      } else {
+        this.queries.add(value)
+      }
+      console.log(this.queries)
+    }
+  }
 }
 </script>
 
