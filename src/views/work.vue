@@ -87,11 +87,6 @@ export default {
       data: this.resume
     }).value
 
-    var test = this.jsonQuery('courses.skills', {
-      data: this.resume
-    })
-    console.log(test.references)
-
     this.skills = new Set([...project_skills, ...work_skills, ...school_skills])
   },
 

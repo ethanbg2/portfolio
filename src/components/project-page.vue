@@ -1,9 +1,13 @@
 <template>
   <div class="project-page-container">
     <app-header></app-header>
-    <div class="project-page-container01">
-      <h1 class="project-page-text">
+    <div v-if="this_project" class="project-page-container01">
+      <h1 v-if="is_project" class="project-page-text">
         <span>{{this_project.name}}</span>
+        <br />
+      </h1>
+      <h1 v-else-if="is_work" class="project-page-text">
+        <span>{{this_project.company}}</span>
         <br />
       </h1>
       <div class="project-page-container02">
@@ -21,8 +25,12 @@
             d="M566.286 585.143l36.571-146.286h-145.143l-36.571 146.286h145.143zM1005.143 297.143l-32 128c-2.286 8-9.143 13.714-17.714 13.714h-186.857l-36.571 146.286h177.714c5.714 0 10.857 2.857 14.286 6.857 3.429 4.571 5.143 10.286 3.429 16l-32 128c-1.714 8-9.143 13.714-17.714 13.714h-186.857l-46.286 187.429c-2.286 8-9.714 13.714-17.714 13.714h-128c-5.714 0-11.429-2.857-14.857-6.857-3.429-4.571-4.571-10.286-3.429-16l44.571-178.286h-145.143l-46.286 187.429c-2.286 8-9.714 13.714-17.714 13.714h-128.571c-5.143 0-10.857-2.857-14.286-6.857-3.429-4.571-4.571-10.286-3.429-16l44.571-178.286h-177.714c-5.714 0-10.857-2.857-14.286-6.857-3.429-4.571-4.571-10.286-3.429-16l32-128c2.286-8 9.143-13.714 17.714-13.714h186.857l36.571-146.286h-177.714c-5.714 0-10.857-2.857-14.286-6.857-3.429-4.571-5.143-10.286-3.429-16l32-128c1.714-8 9.143-13.714 17.714-13.714h186.857l46.286-187.429c2.286-8 9.714-13.714 18.286-13.714h128c5.143 0 10.857 2.857 14.286 6.857 3.429 4.571 4.571 10.286 3.429 16l-44.571 178.286h145.143l46.286-187.429c2.286-8 9.714-13.714 18.286-13.714h128c5.143 0 10.857 2.857 14.286 6.857 3.429 4.571 4.571 10.286 3.429 16l-44.571 178.286h177.714c5.714 0 10.857 2.857 14.286 6.857 3.429 4.571 4.571 10.286 3.429 16z"
           ></path>
         </svg>
-        <span class="project-page-text06">
+        <span v-if="is_project" class="project-page-text06">
           <span>{{this_project.type}}</span>
+          <br />
+        </span>
+        <span v-else-if="is_work" class="project-page-text06">
+          <span>{{this_project.position}}</span>
           <br />
         </span>
       </div>
@@ -34,17 +42,17 @@
       </div>
       <div class="project-page-separator"></div>
       <div class="project-page-container05">
-        <img
+        <img v-if="is_project"
           :src="require(`@/assets/${this_project.images[0]}`)"
           alt="image"
           class="project-page-image"
         />
-        <img
+        <img v-if="is_project"
           :src="require(`@/assets/${this_project.images[1]}`)"
           alt="image"
           class="project-page-image1"
         />
-        <img
+        <img v-if="is_project"
           :src="require(`@/assets/${this_project.images[2]}`)"
           alt="image"
           class="project-page-image2"
@@ -88,6 +96,13 @@
           {{item.text}}
         </a>
       </div>
+      <project-gallary v-if="is_work" :projects="work_projects"></project-gallary>
+    </div>
+    <div v-else class="project-page-container01">
+      <h1 class="project-page-text">
+        <span>Project Not Found</span>
+        <br />
+      </h1>
     </div>
     <app-footer></app-footer>
   </div>
@@ -98,12 +113,20 @@ import AppHeader from './header'
 import StaticTag from './StaticTag'
 import ListItem from './ListItem'
 import AppFooter from './footer'
+import ProjectGallary from './project-gallary'
 import resume from '@/assets/resume.json'
 
 export default {
   name: 'ProjectPage',
   data () {
-    return {resume: resume, this_project: undefined}
+    return {
+      resume: resume, 
+      this_project: undefined,
+      jsonQuery: require('json-query'),
+      is_project: false,
+      is_work: false,
+      work_projects: []
+    }
   },
   props: {},
   components: {
@@ -111,13 +134,33 @@ export default {
     StaticTag,
     ListItem,
     AppFooter,
+    ProjectGallary
   },
   created () {
     const name = this.$route.params.id
-    for (const [_, project] of Object.entries(resume.projects)) {
-      if (name == project.name) {
-        this.this_project = project
-        break
+
+    var project = this.jsonQuery(`projects[name=${name}]`, {
+      data: this.resume
+    }).value
+
+    var company = this.jsonQuery(`work[company=${name}]`, {
+      data: this.resume
+    }).value
+
+    if (project) {
+      this.is_project = true
+      this.this_project = project
+    } else if (company) {
+      this.is_work = true
+      this.this_project = company
+
+      var company_projects = company.projects
+      for (var i = 0; i < company_projects.length; i++) {
+        var proj_name = company_projects[i]
+        var proj_obj = this.jsonQuery(`projects[name=${proj_name}]`, {
+          data: this.resume
+        }).value
+        this.work_projects.push(proj_obj)
       }
     }
   }
