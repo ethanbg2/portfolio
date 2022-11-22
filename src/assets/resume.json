@@ -25,43 +25,39 @@
     "work": [{
       "company": "Media and Advertising Lab UIUC",
       "position": "Undergraduate Research Assistant",
-      "url": "https://company.com",
       "date": "May 2021 - Aug 2022",
-      "summary": "Description…",
-      "highlights": [
+      "description": "Description…",
+      "contributions": [
         "Started the company"
       ],
       "skills": [
         "XML",
         "React.js"
+      ],
+      "links": [
+        {
+          "text": "test",
+          "url": "https://www.google.com"
+        }
       ]
     },
     {
       "company": "Media and Advertising Lab UIUC",
       "position": "Undergraduate Research Assistant",
-      "url": "https://company.com",
       "date": "May 2021 - Aug 2022",
-      "summary": "Description…",
-      "highlights": [
+      "description": "Description…",
+      "contributions": [
         "Started the company"
       ],
       "skills": [
         "XML",
         "React.js"
-      ]
-    },
-    {
-      "company": "Information and Intelligence Group UIUC",
-      "position": "Undergraduate Research Assistant",
-      "url": "https://company.com",
-      "date": "May 2021 - Aug 2022",
-      "summary": "Description…",
-      "highlights": [
-        "Started the company"
       ],
-      "skills": [
-        "XML",
-        "React.js"
+      "links": [
+        {
+          "text": "test",
+          "url": "https://www.google.com"
+        }
       ]
     }],
     "education": [{
