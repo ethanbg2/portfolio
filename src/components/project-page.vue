@@ -96,6 +96,7 @@
           {{item.text}}
         </a>
       </div>
+      <project-gallary v-if="is_work" :projects="work_projects"></project-gallary>
     </div>
     <div v-else class="project-page-container01">
       <h1 class="project-page-text">
@@ -112,6 +113,7 @@ import AppHeader from './header'
 import StaticTag from './StaticTag'
 import ListItem from './ListItem'
 import AppFooter from './footer'
+import ProjectGallary from './project-gallary'
 import resume from '@/assets/resume.json'
 
 export default {
@@ -122,7 +124,8 @@ export default {
       this_project: undefined,
       jsonQuery: require('json-query'),
       is_project: false,
-      is_work: false
+      is_work: false,
+      work_projects: []
     }
   },
   props: {},
@@ -131,6 +134,7 @@ export default {
     StaticTag,
     ListItem,
     AppFooter,
+    ProjectGallary
   },
   created () {
     const name = this.$route.params.id
@@ -149,6 +153,15 @@ export default {
     } else if (company) {
       this.is_work = true
       this.this_project = company
+
+      var company_projects = company.projects
+      for (var i = 0; i < company_projects.length; i++) {
+        var proj_name = company_projects[i]
+        var proj_obj = this.jsonQuery(`projects[name=${proj_name}]`, {
+          data: this.resume
+        }).value
+        this.work_projects.push(proj_obj)
+      }
     }
   }
   
