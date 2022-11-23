@@ -23,20 +23,30 @@
         "Started the company"
       ],
       "skills": [
-        "XML",
-        "React.js"
+        "Python",
+        "Pandas",
+        "Numpy",
+        "Selenium",
+        "BS4",
+        "Spacy",
+        "NLTK",
+        "Networkx",
+        "Altair",
+        "Matplotlib",
+        "Scipy",
+        "Sklearn"
       ],
       "projects": [
       ],
       "links": [
         {
-          "text": "test",
-          "url": "https://www.google.com"
+          "text": "Lab Website",
+          "url": "https://madlabresearch.web.illinois.edu/"
         }
       ]
     },
     {
-      "company": "Media and Advertising Lab UIUC",
+      "company": "Information and Intelligence Group UIUC",
       "position": "Undergraduate Research Assistant",
       "date": "May 2021 - Aug 2022",
       "description": "Description…",
@@ -44,8 +54,9 @@
         "Started the company"
       ],
       "skills": [
-        "XML",
-        "React.js"
+        "Python",
+        "RLlib",
+        "TensorFlow"
       ],
       "projects": [
       ],
@@ -141,15 +152,13 @@
         "name": "Data Structures",
         "skills": [
           "C++",
-          "Network Analysis"
+          "Object Oriented Design",
+          "Catch2"
         ]
       },
       {
         "name": "Algorithms",
-        "skills": [
-          "Problem Solving",
-          "Coding"
-        ]
+        "skills": []
       },
       {
         "name": "Systems Programming",
@@ -161,14 +170,43 @@
           "Microservice Architecture",
           "AWS S3",
           "Docker",
-          "REST APIs"
+          "REST APIs",
+          "Multi-Threading",
+          "Pytest"
+        ]
+      },
+      {
+        "name": "Discrete Structures",
+        "skills": []
+      },
+      {
+        "name": "Software Design",
+        "skills": [
+          "Object Oriented Design",
+          "C++",
+          "Java",
+          "Catch2"
         ]
       },
       {
         "name": "Probability/Statistics",
         "skills": [
-          "Problem Solving",
-          "Coding"
+          "Python",
+          "Sklearn",
+          "Numpy",
+          "Pandas",
+          "TensorFlow",
+          "Matplotlib"
+        ]
+      },
+      {
+        "name": "Linear Algebra",
+        "skills": [
+          "Python",
+          "Sklearn",
+          "Numpy",
+          "Pandas",
+          "Matplotlib"
         ]
       }
     ]
