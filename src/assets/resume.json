@@ -14,14 +14,6 @@
         "url": "https://twitter.com/john"
       }]
     },
-    "top_skills": [{
-        "name": "Python"
-      },
-        {"name": "C++"
-    },
-    {
-        "name": "Java"
-    }],
     "work": [{
       "company": "Media and Advertising Lab UIUC",
       "position": "Undergraduate Research Assistant",
@@ -148,8 +140,8 @@
       {
         "name": "Data Structures",
         "skills": [
-          "Redis",
-          "Flask"
+          "C++",
+          "Network Analysis"
         ]
       },
       {
@@ -162,8 +154,14 @@
       {
         "name": "Systems Programming",
         "skills": [
-          "Problem Solving",
-          "Coding"
+          "C",
+          "Flask",
+          "Redis",
+          "Python",
+          "Microservice Architecture",
+          "AWS S3",
+          "Docker",
+          "REST APIs"
         ]
       },
       {

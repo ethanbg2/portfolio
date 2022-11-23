@@ -68,14 +68,13 @@ export default {
             resume: resume,
             queries: new Set(), 
             jsonQuery: require('json-query'), 
-            skills: new Set(),
+            skills: [],
             current_projects: resume.projects,
             current_courses: resume.courses,
             current_work: resume.work
           }
   },
   created() {
-    console.log("created")
     // compile all skills
     var project_skills = this.jsonQuery('projects.skills', {
       data: this.resume
@@ -87,7 +86,23 @@ export default {
       data: this.resume
     }).value
 
-    this.skills = new Set([...project_skills, ...work_skills, ...school_skills])
+    // sort skills in decreasing order of frequency
+    Array.prototype.byCount= function(){
+      var itm, a= [], L= this.length, o= {};
+      for(var i= 0; i<L; i++){
+          itm= this[i];
+          if(!itm) continue;
+          if(o[itm]== undefined) o[itm]= 1;
+          else ++o[itm];
+      }
+      for(var p in o) a[a.length]= p;
+      return a.sort(function(a, b){
+          return o[b]-o[a];
+      });
+    }
+
+    var all_skills = [...project_skills, ...work_skills, ...school_skills]
+    this.skills = all_skills.byCount()
   },
 
   methods: {
