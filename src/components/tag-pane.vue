@@ -24,7 +24,7 @@
     name: 'TagPane',
     props: {
       tags: {
-        type: Set
+        type: Array
       }
     },
     components: {

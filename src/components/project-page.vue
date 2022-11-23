@@ -96,7 +96,8 @@
           {{item.text}}
         </a>
       </div>
-      <project-gallary v-if="is_work" :projects="work_projects"></project-gallary>
+      <!-- uncomment this when I add project gallary to work page -->
+      <!-- <project-gallary v-if="is_work" :projects="work_projects"></project-gallary> -->
     </div>
     <div v-else class="project-page-container01">
       <h1 class="project-page-text">
@@ -154,14 +155,16 @@ export default {
       this.is_work = true
       this.this_project = company
 
-      var company_projects = company.projects
-      for (var i = 0; i < company_projects.length; i++) {
-        var proj_name = company_projects[i]
-        var proj_obj = this.jsonQuery(`projects[name=${proj_name}]`, {
-          data: this.resume
-        }).value
-        this.work_projects.push(proj_obj)
-      }
+      // uncomment this when I add project gallary to work page
+
+      // var company_projects = company.projects
+      // for (var i = 0; i < company_projects.length; i++) {
+      //   var proj_name = company_projects[i]
+      //   var proj_obj = this.jsonQuery(`projects[name=${proj_name}]`, {
+      //     data: this.resume
+      //   }).value
+      //   this.work_projects.push(proj_obj)
+      // }
     }
   }
   
