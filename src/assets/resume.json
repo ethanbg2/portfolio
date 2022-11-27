@@ -176,10 +176,6 @@
         ]
       },
       {
-        "name": "Discrete Structures",
-        "skills": []
-      },
-      {
         "name": "Software Design",
         "skills": [
           "Object Oriented Design",
@@ -195,7 +191,7 @@
           "Sklearn",
           "Numpy",
           "Pandas",
-          "TensorFlow",
+          "PyTorch",
           "Matplotlib"
         ]
       },
@@ -208,6 +204,14 @@
           "Pandas",
           "Matplotlib"
         ]
+      },
+      {
+        "name": "Tech/Advertising",
+        "skills": []
+      },
+      {
+        "name": "Research Methods",
+        "skills": []
       }
     ]
   }
