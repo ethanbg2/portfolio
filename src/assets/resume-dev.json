@@ -176,6 +176,38 @@
         "url": "https://ethangrinberg.netlify.app/"
       }
     ]
+  },
+  {
+    "name": "Art Synth",
+    "type": "Web App",
+    "description": "Description…",
+    "date": "Aug 2022",
+    "skills": [
+      "Python",
+      "Vue.js",
+      "Microservice Architecture",
+      "cPanel"
+    ],
+    "images": [
+      "profile.jpg",
+      "profile.jpg",
+      "profile.jpg"
+    ],
+    "contributions": [
+      "Implemented server side caching to reduce computation time by 50% (change exact amount)",
+      "task 2",
+      "task 3"
+    ],
+    "links": [
+      {
+        "text": "test",
+        "url": "https://www.google.com"
+      },
+      {
+        "text": "test 2",
+        "url": "https://ethangrinberg.netlify.app/"
+      }
+    ]
   }],
   "courses": [
     {
