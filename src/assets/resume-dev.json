@@ -1,0 +1,243 @@
+{
+  "basics": {
+    "name": "Ethan Grinberg",
+    "label": "Software Developer",
+    "image": "cover-image.png",
+    "email": "ethanbg2@illinois.edu",
+    "phone": "(309) 202-6246",
+    "url": "https://ethangrinberg.netlify.app/",
+    "resume_url": "https://docs.google.com/document/d/1hI4xo5BDCiqm8rjPqlC2n26F9glB9UkavpYrbu4yO-s/export?format=pdf",
+    "summary": "Full Stack Developer, Data Scientist, and Researcher",
+    "profiles": [{
+      "network": "Twitter",
+      "username": "john",
+      "url": "https://twitter.com/john"
+    }]
+  },
+  "work": [{
+    "company": "Media and Advertising Lab UIUC",
+    "position": "Undergraduate Research Assistant",
+    "date": "May 2021 - Aug 2022",
+    "description": "Description…",
+    "contributions": [
+      "Started the company"
+    ],
+    "skills": [
+      "Python",
+      "Pandas",
+      "Numpy",
+      "Selenium",
+      "BS4",
+      "Spacy",
+      "NLTK",
+      "Networkx",
+      "Altair",
+      "Matplotlib",
+      "Scipy",
+      "Sklearn"
+    ],
+    "projects": [
+    ],
+    "links": [
+      {
+        "text": "Lab Website",
+        "url": "https://madlabresearch.web.illinois.edu/"
+      }
+    ]
+  },
+  {
+    "company": "Information and Intelligence Group UIUC",
+    "position": "Undergraduate Research Assistant",
+    "date": "May 2021 - Aug 2022",
+    "description": "Description…",
+    "contributions": [
+      "Started the company"
+    ],
+    "skills": [
+      "Python",
+      "RLlib",
+      "TensorFlow"
+    ],
+    "projects": [
+    ],
+    "links": [
+      {
+        "text": "test",
+        "url": "https://www.google.com"
+      }
+    ]
+  }],
+  "education": [{
+    "institution": "University",
+    "url": "https://institution.com/",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "projects": [{
+    "name": "Product Cupid",
+    "type": "Web App",
+    "description": "Description…",
+    "date": "Aug 2022",
+    "skills": [
+      "Python",
+      "React.js"
+    ],
+    "images": [
+      "profile.jpg",
+      "profile.jpg",
+      "profile.jpg"
+    ],
+    "contributions": [
+      "task 1",
+      "task 2",
+      "task 3"
+    ],
+    "links": [
+      {
+        "text": "test",
+        "url": "https://www.google.com"
+      },
+      {
+        "text": "test 2",
+        "url": "https://ethangrinberg.netlify.app/"
+      }
+    ]
+  },
+  {
+    "name": "Mental Health Dashboard",
+    "type": "Web App",
+    "description": "Description…",
+    "date": "Dec 2022",
+    "skills": [
+      "Python",
+      "Streamlit"
+    ],
+    "images": [
+      "profile.jpg",
+      "profile.jpg",
+      "profile.jpg"
+    ],
+    "contributions": [
+      "task 1",
+      "task 2",
+      "task 3"
+    ],
+    "links": [
+      {
+        "text": "test",
+        "url": "https://www.google.com"
+      },
+      {
+        "text": "test 2",
+        "url": "https://ethangrinberg.netlify.app/"
+      }
+    ]
+  }, 
+  {
+    "name": "Misinformation",
+    "type": "Data Science",
+    "description": "Description…",
+    "date": "May 2021",
+    "skills": [
+      "Python",
+      "Java",
+      "React.js",
+      "Object Oriented Design"
+    ],
+    "images": [
+      "profile.jpg",
+      "profile.jpg",
+      "profile.jpg"
+    ],
+    "contributions": [
+      "task 1",
+      "task 2",
+      "task 3"
+    ],
+    "links": [
+      {
+        "text": "test",
+        "url": "https://www.google.com"
+      },
+      {
+        "text": "test 2",
+        "url": "https://ethangrinberg.netlify.app/"
+      }
+    ]
+  }],
+  "courses": [
+    {
+      "name": "Data Structures",
+      "skills": [
+        "C++",
+        "Object Oriented Design",
+        "Catch2"
+      ]
+    },
+    {
+      "name": "Algorithms",
+      "skills": []
+    },
+    {
+      "name": "Systems Programming",
+      "skills": [
+        "C",
+        "Flask",
+        "Redis",
+        "Python",
+        "Microservice Architecture",
+        "AWS S3",
+        "Docker",
+        "REST APIs",
+        "Multi-Threading",
+        "Pytest"
+      ]
+    },
+    {
+      "name": "Discrete Structures",
+      "skills": []
+    },
+    {
+      "name": "Software Design",
+      "skills": [
+        "Object Oriented Design",
+        "C++",
+        "Java",
+        "Catch2"
+      ]
+    },
+    {
+      "name": "Probability/Statistics",
+      "skills": [
+        "Python",
+        "Sklearn",
+        "Numpy",
+        "Pandas",
+        "TensorFlow",
+        "Matplotlib"
+      ]
+    },
+    {
+      "name": "Linear Algebra",
+      "skills": [
+        "Python",
+        "Sklearn",
+        "Numpy",
+        "Pandas",
+        "Matplotlib"
+      ]
+    }
+  ]
+}
