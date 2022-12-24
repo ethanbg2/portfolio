@@ -115,7 +115,7 @@ import StaticTag from './StaticTag'
 import ListItem from './ListItem'
 import AppFooter from './footer'
 import ProjectGallary from './project-gallary'
-import resume from '@/assets/resume.json'
+const resume = require(process.env.VUE_APP_RESUME_FILE)
 
 export default {
   name: 'ProjectPage',
