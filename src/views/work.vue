@@ -32,7 +32,7 @@ import CourseCardPane from '../components/CourseCardPane'
 import ExperienceCardPane from '../components/ExperienceCardPane'
 import AppHeader from '../components/header'
 import AppFooter from '../components/footer'
-import resume from '@/assets/resume.json'
+const resume = require(process.env.VUE_APP_RESUME_FILE)
 
 export default {
   name: 'Work',

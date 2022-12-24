@@ -16,7 +16,7 @@ import AppTag from '../components/tag'
 import ProjectGallary from '../components/project-gallary'
 import AppButton from '../components/button'
 import AppFooter from '../components/footer'
-import resume from '@/assets/resume.json'
+const resume = require(process.env.VUE_APP_RESUME_FILE)
 
 export default {
   name: 'Home',
