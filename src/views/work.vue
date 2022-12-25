@@ -157,7 +157,7 @@ export default {
     background-color: var(--dl-color-darkmode-base);
 }
 .work-text {
-  font-size: 4em;
+  font-size: 3em;
   align-self: center;
   margin-top: var(--dl-space-space-threeunits);
 }
@@ -165,7 +165,7 @@ export default {
   color: var(--dl-color-gray-white);
 }
 .work-text03 {
-  font-size: 3rem;
+  font-size: 2rem;
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
   margin-bottom: var(--dl-space-space-twounits);
@@ -174,7 +174,7 @@ export default {
   color: var(--dl-color-gray-white);
 }
 .work-heading {
-  font-size: 3rem;
+  font-size: 2rem;
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
   margin-bottom: var(--dl-space-space-twounits);
@@ -183,7 +183,7 @@ export default {
   color: var(--dl-color-gray-white);
 }
 .work-text08 {
-  font-size: 3rem;
+  font-size: 2rem;
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
   margin-bottom: var(--dl-space-space-twounits);

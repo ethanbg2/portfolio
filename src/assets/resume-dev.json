@@ -1,121 +1,180 @@
 {
-  "basics": {
-    "name": "Ethan Grinberg",
-    "label": "Software Developer",
-    "image": "cover-image.png",
-    "email": "ethanbg2@illinois.edu",
-    "phone": "(309) 202-6246",
-    "url": "https://ethangrinberg.netlify.app/",
-    "resume_url": "https://docs.google.com/document/d/1hI4xo5BDCiqm8rjPqlC2n26F9glB9UkavpYrbu4yO-s/export?format=pdf",
-    "summary": "Full Stack Developer, Data Scientist, and Researcher",
-    "profiles": [{
-      "network": "Twitter",
-      "username": "john",
-      "url": "https://twitter.com/john"
-    }]
-  },
-  "work": [{
-    "company": "Media and Advertising Lab UIUC",
-    "position": "Undergraduate Research Assistant",
-    "date": "May 2021 - Aug 2022",
-    "description": "Description…",
-    "contributions": [
-      "Started the company"
-    ],
-    "skills": [
-      "Python",
-      "Pandas",
-      "Numpy",
-      "Selenium",
-      "BS4",
-      "Spacy",
-      "NLTK",
-      "Networkx",
-      "Altair",
-      "Matplotlib",
-      "Scipy",
-      "Sklearn"
-    ],
+    "basics": {
+      "name": "Ethan Grinberg",
+      "label": "Software Developer",
+      "profile_pic": "profile.jpg",
+      "image": "cover-image.png",
+      "email": "ethanbg2@illinois.edu",
+      "phone": "(309) 202-6246",
+      "url": "https://ethangrinberg.netlify.app/",
+      "resume_url": "https://docs.google.com/document/d/1hI4xo5BDCiqm8rjPqlC2n26F9glB9UkavpYrbu4yO-s/export?format=pdf",
+      "summary": "Full Stack Developer, Data Scientist, and Researcher",
+      "bio": "I like creating digital stuff",
+      "profiles": [{
+        "network": "Twitter",
+        "username": "john",
+        "url": "https://twitter.com/john"
+      }]
+    },
+    "work": [{
+      "company": "Media and Advertising Lab UIUC",
+      "position": "Undergraduate Research Assistant",
+      "date": "May 2021 - Aug 2022",
+      "description": "Description…",
+      "contributions": [
+        "Started the company"
+      ],
+      "skills": [
+        "Python",
+        "Pandas",
+        "Numpy",
+        "Selenium",
+        "BS4",
+        "Spacy",
+        "NLTK",
+        "Networkx",
+        "Altair",
+        "Matplotlib",
+        "Scipy",
+        "Sklearn"
+      ],
+      "projects": [
+      ],
+      "links": [
+        {
+          "text": "Lab Website",
+          "url": "https://madlabresearch.web.illinois.edu/"
+        }
+      ]
+    },
+    {
+      "company": "Information and Intelligence Group UIUC",
+      "position": "Undergraduate Research Assistant",
+      "date": "May 2021 - Aug 2022",
+      "description": "Description…",
+      "contributions": [
+        "Started the company"
+      ],
+      "skills": [
+        "Python",
+        "RLlib",
+        "TensorFlow"
+      ],
+      "projects": [
+      ],
+      "links": [
+        {
+          "text": "test",
+          "url": "https://www.google.com"
+        }
+      ]
+    }],
+    "education": [{
+      "title": "University of Illinois at Urbana-Champaign (UIUC)",
+      "description": "2020 - 2024, Bachelor of Science in Computer Science and Advertising, GPA: 4.0"
+    }],
+    "awards": [{
+      "title": "Outstanding Poster Presentation Undergraduate Research Symposium",
+      "description": "Received Outstanding Poster Presentation in Numbers, Data, and Computation at the 2022 Undergraduate Research Symposium for my work on machine learning and misinformation"
+    },
+    {
+      "title": "Image of Research Semi-Finalist",
+      "description": "My data visualization of misinformation was displayed at the Undergraduate Research Symposium in 2022"
+    },
+    {
+      "title": "Provost Scholarship",
+      "description": "Full tuition scholarship given to the top 20 incoming freshman at UIUC"
+    },
+    {
+      "title": "James Scholar",
+      "description": "Top 20% distinction with the completion of an honors project every year"
+    }
+  ],
+    "publications": [{
+      "title": "ICA Movie NLP Research Paper",
+      "description": "Dale, K., Fisher, J.T., Liao, J., & Grinberg, E. (2022). The shape of inspiration: Exploring the narrative story trajectories and self-transcendent elicitors within inspirational movies. Paper submitted to the 22nd annual meeting of the International Communication Association (Paris, FR)."
+    }],
     "projects": [
-    ],
-    "links": [
-      {
-        "text": "Lab Website",
-        "url": "https://madlabresearch.web.illinois.edu/"
-      }
-    ]
+  {
+      "name": "Mechanisms of Misinformation",
+      "type": "Data Science",
+      "description": "The radical change social media has brought to our information ecosystem has created one of the biggest problems our world faces today: misinformation. With economic, social, and political implications, researchers have directed their attention to ways in which this problem can be understood and solved. Recent work has shown that articles from misleading sources can be told apart from mainstream sources by the topology of their Twitter diffusion networks. This project expands on these findings by attempting to answer the question: can the diffusion networks of misinformation articles reveal a set of ways in which misinformation spreads on social media? To accomplish this, the Twitter diffusion networks of over 700 articles from low credibility sources were converted to embeddings using the UGraphEmb graph embedding algorithm and clustered using k-means clustering. From here the differences in topological features of diffusion networks belonging to different clusters will be analyzed and explained. The hope is to use these results to better inform social media policy and algorithm design. ",
+      "date": "Jan 2022 - Aug 2022",
+      "skills": [
+        "Python",
+        "Altair",
+        "Pandas",
+        "Numpy",
+        "Networkx",
+        "TensorFlow",
+        "Pytorch",
+        "Sklearn",
+        "InDesign"
+      ],
+      "images": [
+        "misinfo_viz.jpeg",
+        "presenting.jpg",
+        "poster.jpeg"
+      ],
+      "contributions": [
+        "task 1",
+        "task 2",
+        "task 3"
+      ],
+      "links": [
+        {
+          "text": "GitHub",
+          "url": "https://github.com/ethanbg2/misinformation-cluster-analysis"
+        },
+        {
+          "text": "Poster",
+          "url": "https://github.com/ethanbg2/misinformation-cluster-analysis/blob/master/reports/poster/ug_symposium_poster_2022.pdf"
+        },
+        {
+          "text": "Poster Presentation Award",
+          "url": "https://blogs.illinois.edu/view/6204/678500770"
+        },
+        {
+          "text": "College Blog Post",
+          "url": "https://media.illinois.edu/media-students-present-2022-undergraduate-research-symposium"
+        },
+        {
+          "text": "Image of Research",
+          "url": "https://publish.illinois.edu/imageofresearch/undergraduate-image-of-research/2022-undergraduate-entries/"
+        }
+      ]
   },
   {
-    "company": "Information and Intelligence Group UIUC",
-    "position": "Undergraduate Research Assistant",
-    "date": "May 2021 - Aug 2022",
-    "description": "Description…",
-    "contributions": [
-      "Started the company"
-    ],
-    "skills": [
-      "Python",
-      "RLlib",
-      "TensorFlow"
-    ],
-    "projects": [
-    ],
-    "links": [
-      {
-        "text": "test",
-        "url": "https://www.google.com"
-      }
-    ]
-  }],
-  "education": [{
-    "institution": "University",
-    "url": "https://institution.com/",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "projects": [{
-    "name": "Product Cupid",
-    "type": "Web App",
-    "description": "Description…",
-    "date": "Aug 2022",
-    "skills": [
-      "Python",
-      "React.js"
-    ],
-    "images": [
-      "profile.jpg",
-      "profile.jpg",
-      "profile.jpg"
-    ],
-    "contributions": [
-      "task 1",
-      "task 2",
-      "task 3"
-    ],
-    "links": [
-      {
-        "text": "test",
-        "url": "https://www.google.com"
-      },
-      {
-        "text": "test 2",
-        "url": "https://ethangrinberg.netlify.app/"
-      }
-    ]
-  },
-  {
+      "name": "Product Cupid",
+      "type": "Web App",
+      "description": "Description…",
+      "date": "Aug 2022",
+      "skills": [
+        "Python",
+        "React.js"
+      ],
+      "images": [
+        "profile.jpg",
+        "profile.jpg",
+        "profile.jpg"
+      ],
+      "contributions": [
+        "task 1",
+        "task 2",
+        "task 3"
+      ],
+      "links": [
+        {
+          "text": "test",
+          "url": "https://www.google.com"
+        },
+        {
+          "text": "test 2",
+          "url": "https://ethangrinberg.netlify.app/"
+        }
+      ]
+    },
+    {
     "name": "Mental Health Dashboard",
     "type": "Web App",
     "description": "Description…",
@@ -144,17 +203,17 @@
         "url": "https://ethangrinberg.netlify.app/"
       }
     ]
-  }, 
+  },
   {
-    "name": "Misinformation",
-    "type": "Data Science",
+    "name": "Art Synth",
+    "type": "Web App",
     "description": "Description…",
-    "date": "May 2021",
+    "date": "Aug 2022",
     "skills": [
       "Python",
-      "Java",
-      "React.js",
-      "Object Oriented Design"
+      "Vue.js",
+      "Microservice Architecture",
+      "cPanel"
     ],
     "images": [
       "profile.jpg",
@@ -162,7 +221,7 @@
       "profile.jpg"
     ],
     "contributions": [
-      "task 1",
+      "Implemented server side caching to reduce computation time by 50% (change exact amount)",
       "task 2",
       "task 3"
     ],
@@ -176,68 +235,102 @@
         "url": "https://ethangrinberg.netlify.app/"
       }
     ]
-  }],
-  "courses": [
+    },
     {
-      "name": "Data Structures",
+      "name": "Portfolio Website",
+      "type": "Web App",
+      "description": "Description…",
+      "date": "Dec 2022",
       "skills": [
-        "C++",
-        "Object Oriented Design",
-        "Catch2"
+        "Vue.js",
+        "Javascript"
+      ],
+      "images": [
+        "profile.jpg",
+        "profile.jpg",
+        "profile.jpg"
+      ],
+      "contributions": [
+        "Created optimized workflow for making updates to resume without need for refactoring user interface",
+        "task 2",
+        "task 3"
+      ],
+      "links": [
+        {
+          "text": "test",
+          "url": "https://www.google.com"
+        },
+        {
+          "text": "test 2",
+          "url": "https://ethangrinberg.netlify.app/"
+        }
       ]
-    },
-    {
-      "name": "Algorithms",
-      "skills": []
-    },
-    {
-      "name": "Systems Programming",
-      "skills": [
-        "C",
-        "Flask",
-        "Redis",
-        "Python",
-        "Microservice Architecture",
-        "AWS S3",
-        "Docker",
-        "REST APIs",
-        "Multi-Threading",
-        "Pytest"
-      ]
-    },
-    {
-      "name": "Discrete Structures",
-      "skills": []
-    },
-    {
-      "name": "Software Design",
-      "skills": [
-        "Object Oriented Design",
-        "C++",
-        "Java",
-        "Catch2"
-      ]
-    },
-    {
-      "name": "Probability/Statistics",
-      "skills": [
-        "Python",
-        "Sklearn",
-        "Numpy",
-        "Pandas",
-        "TensorFlow",
-        "Matplotlib"
-      ]
-    },
-    {
-      "name": "Linear Algebra",
-      "skills": [
-        "Python",
-        "Sklearn",
-        "Numpy",
-        "Pandas",
-        "Matplotlib"
-      ]
-    }
-  ]
-}
+    }],
+    "courses": [
+      {
+        "name": "Data Structures",
+        "skills": [
+          "C++",
+          "Object Oriented Design",
+          "Catch2"
+        ]
+      },
+      {
+        "name": "Algorithms",
+        "skills": []
+      },
+      {
+        "name": "Systems Programming",
+        "skills": [
+          "C",
+          "Flask",
+          "Redis",
+          "Python",
+          "Microservice Architecture",
+          "AWS S3",
+          "Docker",
+          "REST APIs",
+          "Multi-Threading",
+          "Pytest"
+        ]
+      },
+      {
+        "name": "Software Design",
+        "skills": [
+          "Object Oriented Design",
+          "C++",
+          "Java",
+          "Catch2"
+        ]
+      },
+      {
+        "name": "Probability/Statistics",
+        "skills": [
+          "Python",
+          "Sklearn",
+          "Numpy",
+          "Pandas",
+          "PyTorch",
+          "Matplotlib"
+        ]
+      },
+      {
+        "name": "Linear Algebra",
+        "skills": [
+          "Python",
+          "Sklearn",
+          "Numpy",
+          "Pandas",
+          "Matplotlib"
+        ]
+      },
+      {
+        "name": "Tech/Advertising",
+        "skills": []
+      },
+      {
+        "name": "Research Methods",
+        "skills": []
+      }
+    ]
+  }

@@ -3,7 +3,7 @@
     <router-link :to="{name: 'Work'}" class="navigation-links-text">
       Work
     </router-link>
-    <router-link :to="{name: 'Home'}" class="navigation-links-text1">
+    <router-link :to="{name: 'About'}" class="navigation-links-text1">
       About Me
     </router-link>
   </nav>

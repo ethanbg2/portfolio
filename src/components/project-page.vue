@@ -288,7 +288,7 @@ export default {
 }
 .project-page-image {
   width: var(--dl-size-size-xxlarge);
-  height: auto;
+  height: var(--dl-size-size-xxlarge);
   margin-top: var(--dl-space-space-halfunit);
   object-fit: cover;
   margin-left: 0px;
@@ -298,14 +298,14 @@ export default {
 }
 .project-page-image1 {
   width: var(--dl-size-size-xxlarge);
-  height: auto;
+  height: var(--dl-size-size-xxlarge);
   margin: var(--dl-space-space-halfunit);
   object-fit: cover;
   border-radius: var(--dl-radius-radius-radius8);
 }
 .project-page-image2 {
   width: var(--dl-size-size-xxlarge);
-  height: auto;
+  height: var(--dl-size-size-xxlarge);
   margin: var(--dl-space-space-halfunit);
   object-fit: cover;
   border-radius: var(--dl-radius-radius-radius8);
@@ -313,7 +313,10 @@ export default {
 .project-page-text10 {
   color: var(--dl-color-gray-white);
   align-self: flex-start;
+  font-style: normal;
   margin-top: var(--dl-space-space-twounits);
+  font-weight: 200;
+  line-height: 2;
   margin-left: 0px;
 }
 .project-page-container06 {
@@ -380,27 +383,11 @@ export default {
 .project-page-link {
   color: var(--dl-color-darkmode-4);
   transition: 0.3s;
-  margin-bottom: var(--dl-space-space-halfunit);
+  margin-bottom: var(--dl-space-space-unit);
   text-decoration: underline;
 }
 .project-page-link:hover {
   color: var(--dl-color-gray-white);
-}
-.project-page-link1 {
-  color: var(--dl-color-gray-white);
-  transition: 0.3s;
-  margin-bottom: var(--dl-space-space-halfunit);
-}
-.project-page-link1:hover {
-  color: var(--dl-color-darkmode-4);
-}
-.project-page-link2 {
-  color: var(--dl-color-gray-white);
-  transition: 0.3s;
-  margin-bottom: var(--dl-space-space-halfunit);
-}
-.project-page-link2:hover {
-  color: var(--dl-color-darkmode-4);
 }
 @media(max-width: 1600px) {
   .project-page-container01 {
