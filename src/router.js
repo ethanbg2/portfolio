@@ -4,6 +4,7 @@ import Meta from 'vue-meta'
 
 import Home from './views/home'
 import Work from './views/work'
+import About from './views/about'
 import ProjectPage from './components/project-page'
 import './style.css'
 
@@ -16,6 +17,11 @@ export default new Router({
       name: 'Home',
       path: '/',
       component: Home,
+    },
+    {
+      name: "About",
+      path: '/about',
+      component: About
     },
     {
       name: "Work",
