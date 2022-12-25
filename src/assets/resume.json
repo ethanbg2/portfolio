@@ -2,12 +2,14 @@
     "basics": {
       "name": "Ethan Grinberg",
       "label": "Software Developer",
+      "profile_pic": "profile.jpg",
       "image": "cover-image.png",
       "email": "ethanbg2@illinois.edu",
       "phone": "(309) 202-6246",
       "url": "https://ethangrinberg.netlify.app/",
       "resume_url": "https://docs.google.com/document/d/1hI4xo5BDCiqm8rjPqlC2n26F9glB9UkavpYrbu4yO-s/export?format=pdf",
       "summary": "Full Stack Developer, Data Scientist, and Researcher",
+      "bio": "I like creating digital stuff",
       "profiles": [{
         "network": "Twitter",
         "username": "john",
@@ -68,36 +70,51 @@
       ]
     }],
     "education": [{
-      "institution": "University",
-      "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
+      "title": "University of Illinois at Urbana-Champaign (UIUC)",
+      "description": "2020 - 2024, Bachelor of Science in Computer Science and Advertising, GPA: 4.0"
     }],
     "awards": [{
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
+      "title": "Outstanding Poster Presentation Undergraduate Research Symposium",
+      "description": "Received Outstanding Poster Presentation in Numbers, Data, and Computation at the 2022 Undergraduate Research Symposium for my work on machine learning and misinformation"
+    },
+    {
+      "title": "Image of Research Semi-Finalist",
+      "description": "My data visualization of misinformation was displayed at the Undergraduate Research Symposium in 2022"
+    },
+    {
+      "title": "Provost Scholarship",
+      "description": "Full tuition scholarship given to the top 20 incoming freshman at UIUC"
+    },
+    {
+      "title": "James Scholar",
+      "description": "Top 20% distinction with the completion of an honors project every year"
+    }
+  ],
+    "publications": [{
+      "title": "ICA Movie NLP Research Paper",
+      "description": "Dale, K., Fisher, J.T., Liao, J., & Grinberg, E. (2022). The shape of inspiration: Exploring the narrative story trajectories and self-transcendent elicitors within inspirational movies. Paper submitted to the 22nd annual meeting of the International Communication Association (Paris, FR)."
     }],
-    "projects": [{
-      "name": "Product Cupid",
-      "type": "Web App",
-      "description": "Description…",
-      "date": "Aug 2022",
+    "projects": [
+  {
+      "name": "Mechanisms of Misinformation",
+      "type": "Data Science",
+      "description": "The radical change social media has brought to our information ecosystem has created one of the biggest problems our world faces today: misinformation. With economic, social, and political implications, researchers have directed their attention to ways in which this problem can be understood and solved. Recent work has shown that articles from misleading sources can be told apart from mainstream sources by the topology of their Twitter diffusion networks. This project expands on these findings by attempting to answer the question: can the diffusion networks of misinformation articles reveal a set of ways in which misinformation spreads on social media? To accomplish this, the Twitter diffusion networks of over 700 articles from low credibility sources were converted to embeddings using the UGraphEmb graph embedding algorithm and clustered using k-means clustering. From here the differences in topological features of diffusion networks belonging to different clusters will be analyzed and explained. The hope is to use these results to better inform social media policy and algorithm design. ",
+      "date": "Jan 2022 - Aug 2022",
       "skills": [
         "Python",
-        "React.js"
+        "Altair",
+        "Pandas",
+        "Numpy",
+        "Networkx",
+        "TensorFlow",
+        "Pytorch",
+        "Sklearn",
+        "InDesign"
       ],
       "images": [
-        "profile.jpg",
-        "profile.jpg",
-        "profile.jpg"
+        "misinfo_viz.jpeg",
+        "presenting.jpg",
+        "poster.jpeg"
       ],
       "contributions": [
         "task 1",
@@ -106,25 +123,36 @@
       ],
       "links": [
         {
-          "text": "test",
-          "url": "https://www.google.com"
+          "text": "GitHub",
+          "url": "https://github.com/ethanbg2/misinformation-cluster-analysis"
         },
         {
-          "text": "test 2",
-          "url": "https://ethangrinberg.netlify.app/"
+          "text": "Poster",
+          "url": "https://github.com/ethanbg2/misinformation-cluster-analysis/blob/master/reports/poster/ug_symposium_poster_2022.pdf"
+        },
+        {
+          "text": "Poster Presentation Award",
+          "url": "https://blogs.illinois.edu/view/6204/678500770"
+        },
+        {
+          "text": "College Blog Post",
+          "url": "https://media.illinois.edu/media-students-present-2022-undergraduate-research-symposium"
+        },
+        {
+          "text": "Image of Research",
+          "url": "https://publish.illinois.edu/imageofresearch/undergraduate-image-of-research/2022-undergraduate-entries/"
         }
       ]
-    },
-    {
-      "name": "Misinformation",
-      "type": "Data Science",
+  },
+  {
+      "name": "Product Cupid",
+      "type": "Web App",
       "description": "Description…",
-      "date": "May 2021",
+      "date": "Aug 2022",
       "skills": [
         "Python",
-        "Java",
         "React.js",
-        "Object Oriented Design"
+        "Microservice Architecture"
       ],
       "images": [
         "profile.jpg",
