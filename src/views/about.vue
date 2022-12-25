@@ -6,6 +6,13 @@
         <br />
       </h1>
       <app-bio :image_src="require(`@/assets/${resume.basics.profile_pic}`)" :text="resume.basics.bio" ></app-bio>
+      <h2 class="about-text3">
+        <span>Some Highlights</span>
+        <br />
+      </h2>
+      <app-highlights rootClassName="highlights-root-class-name"></app-highlights>
+      <app-highlights rootClassName="highlights-root-class-name2"></app-highlights>
+      <app-highlights rootClassName="highlights-root-class-name1"></app-highlights>
       <app-footer></app-footer>
     </div>
   </template>
@@ -14,6 +21,7 @@
   import AppHeader from '../components/header'
   import AppBio from '../components/bio'
   import AppFooter from '../components/footer'
+  import AppHighlights from '../components/highlights'
   const resume = require(process.env.VUE_APP_RESUME_FILE)
   
   export default {
@@ -26,6 +34,7 @@
       AppHeader,
       AppBio,
       AppFooter,
+      AppHighlights
     },
   }
   </script>
@@ -48,6 +57,16 @@
     max-width: var(--dl-size-size-maxwidth);
     align-self: center;
     text-align: center;
+  }
+  .about-text3 {
+    color: var(--dl-color-gray-white);
+    width: 100%;
+    font-size: 2em;
+    max-width: var(--dl-size-size-maxwidth);
+    align-self: center;
+    margin-top: var(--dl-space-space-twounits);
+    text-align: center;
+    margin-bottom: var(--dl-space-space-twounits);
   }
 
   </style>

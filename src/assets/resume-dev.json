@@ -210,6 +210,36 @@
         "url": "https://ethangrinberg.netlify.app/"
       }
     ]
+    },
+    {
+      "name": "Portfolio Website",
+      "type": "Web App",
+      "description": "Description…",
+      "date": "Dec 2022",
+      "skills": [
+        "Vue.js",
+        "Javascript"
+      ],
+      "images": [
+        "profile.jpg",
+        "profile.jpg",
+        "profile.jpg"
+      ],
+      "contributions": [
+        "Created optimized workflow for making updates to resume without need for refactoring user interface",
+        "task 2",
+        "task 3"
+      ],
+      "links": [
+        {
+          "text": "test",
+          "url": "https://www.google.com"
+        },
+        {
+          "text": "test 2",
+          "url": "https://ethangrinberg.netlify.app/"
+        }
+      ]
     }],
     "courses": [
       {
