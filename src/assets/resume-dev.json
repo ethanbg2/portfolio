@@ -71,15 +71,28 @@
     }],
     "education": [{
       "title": "University of Illinois at Urbana-Champaign (UIUC)",
-      "description": "Software Development"
+      "description": "2020 - 2024, Bachelor of Science in Computer Science and Advertising, GPA: 4.0"
     }],
     "awards": [{
-      "title": "Award",
-      "description": "2014-11-01"
-    }],
+      "title": "Outstanding Poster Presentation Undergraduate Research Symposium",
+      "description": "Received Outstanding Poster Presentation in Numbers, Data, and Computation at the 2022 Undergraduate Research Symposium for my work on machine learning and misinformation"
+    },
+    {
+      "title": "Image of Research Semi-Finalist",
+      "description": "My data visualization of misinformation was displayed at the Undergraduate Research Symposium in 2022"
+    },
+    {
+      "title": "Provost Scholarship",
+      "description": "Full tuition scholarship given to the top 20 incoming freshman at UIUC"
+    },
+    {
+      "title": "James Scholar",
+      "description": "Top 20% distinction with the completion of an honors project every year"
+    }
+  ],
     "publications": [{
-      "title": "Book",
-      "description": "a book about..."
+      "title": "ICA Movie NLP Research Paper",
+      "description": "Dale, K., Fisher, J.T., Liao, J., & Grinberg, E. (2022). The shape of inspiration: Exploring the narrative story trajectories and self-transcendent elicitors within inspirational movies. Paper submitted to the 22nd annual meeting of the International Communication Association (Paris, FR)."
     }],
     "projects": [{
       "name": "Product Cupid",
