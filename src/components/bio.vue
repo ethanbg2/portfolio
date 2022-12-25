@@ -21,7 +21,7 @@
       },
       text: {
         type: String,
-        default: 'asdfasdfs',
+        default: 'insert bio',
       },
       rootClassName: String,
     },
@@ -55,7 +55,7 @@
   }
   .bio-text {
     color: var(--dl-color-gray-white);
-    font-size: 24px;
+    font-size: 20px;
     margin-top: var(--dl-space-space-unit);
     margin-left: var(--dl-space-space-threeunits);
   }
