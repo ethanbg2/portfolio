@@ -10,9 +10,9 @@
         <span>Some Highlights</span>
         <br />
       </h2>
-      <app-highlights rootClassName="highlights-root-class-name"></app-highlights>
-      <app-highlights rootClassName="highlights-root-class-name2"></app-highlights>
-      <app-highlights rootClassName="highlights-root-class-name1"></app-highlights>
+      <app-highlights heading="Education" :highlights="resume.education"></app-highlights>
+      <app-highlights heading="Awards" :highlights="resume.awards"></app-highlights>
+      <app-highlights heading="Publications" :highlights="resume.publications"></app-highlights>
       <app-footer></app-footer>
     </div>
   </template>

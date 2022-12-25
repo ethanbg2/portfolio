@@ -3,10 +3,10 @@
       <div class="highlights-container1">
         <h3 class="highlights-text">{{ heading }}</h3>
         <highlight-card
-          rootClassName="highlight-card-root-class-name"
+          v-for="item in highlights"
+          :title="item.title"
+          :description="item.description"
         ></highlight-card>
-        <highlight-card></highlight-card>
-        <highlight-card></highlight-card>
       </div>
     </div>
   </template>
@@ -21,6 +21,10 @@
       heading: {
         type: String,
         default: 'Heading',
+      },
+      highlights: {
+        type: Array,
+        default: []
       }
     },
     components: {
