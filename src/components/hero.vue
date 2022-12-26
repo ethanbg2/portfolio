@@ -22,15 +22,25 @@
       </div>
       </div>
     </div>
-    <img id="profile" :alt="image_alt" :src="image_src" class="hero-image" />
+    <!-- <img id="profile" :alt="image_alt" :src="image_src" class="hero-image" /> -->
+    <div class="lottie-image">
+      <lottie :options="defaultOptions"/>
+    </div>
   </div>
 </template>
 
 <script>
 import AppButton from './button'
+import  Lottie  from 'vue-lottie'
+import * as animationData from '@/assets/meditating-monkey.json'
 
 export default {
   name: 'Hero',
+  data() {
+    return {
+        defaultOptions: {animationData: animationData}
+      }
+  },
   props: {
     image_alt: {
       type: String,
@@ -52,6 +62,7 @@ export default {
   },
   components: {
     AppButton,
+    'lottie': Lottie
   },
 }
 </script>
@@ -102,6 +113,12 @@ export default {
   display: flex;
   align-items: flex-start;
 }
+
+.lottie-image {
+  width: 375px;
+  object-fit: cover;
+}
+
 .hero-image {
   width: var(--dl-size-size-xxlarge);
   object-fit: cover;
