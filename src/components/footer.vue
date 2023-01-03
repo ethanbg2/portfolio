@@ -1,12 +1,43 @@
 <template>
-  <footer class="footer-footer">
+  <footer class="footer-footer" v-bind:class="rootClassName">
+    <app-social :github_link="github_link" :linkedin_link="linkedin_link" :email_link="mail_link"></app-social>
   </footer>
 </template>
 
 <script>
+import AppSocial from './social'
+const resume = require(process.env.VUE_APP_RESUME_FILE)
+
 export default {
   name: 'Footer',
-  props: {},
+  props: {
+    rootClassName: String,
+  },
+  data () {
+    return {
+      jsonQuery: require('json-query'),
+      linkedin_link: "",
+      github_link: "",
+      mail_link: ""
+    }
+  },
+  created () {
+    this.linkedin_link = this.jsonQuery('basics.profiles[network=LinkedIn].url', {
+      data: resume
+    }).value
+
+    this.github_link = this.jsonQuery('basics.profiles[network=GitHub].url', {
+      data: resume
+    }).value
+
+    var email = resume.basics.email
+    this.mail_link = `mailto:${email}`
+    console.log(this.mail_link)
+
+  },
+  components: {
+    AppSocial,
+  },
 }
 </script>
 
@@ -16,37 +47,17 @@ export default {
   display: flex;
   position: relative;
   max-width: var(--dl-size-size-maxwidth);
+  margin-top: var(--dl-space-space-twounits);
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-threeunits);
+  margin-bottom: var(--dl-space-space-twounits);
   padding-right: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-twounits);
-  justify-content: space-between;
+  justify-content: center;
 }
-.footer-icon-group {
-  display: flex;
-  align-self: center;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.footer-icon {
-  fill: var(--dl-color-gray-white);
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-  margin-right: var(--dl-space-space-twounits);
-}
-.footer-icon2 {
-  fill: var(--dl-color-gray-white);
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-  margin-right: var(--dl-space-space-twounits);
-}
-.footer-icon4 {
-  fill: var(--dl-color-gray-white);
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-}
+
+
 @media(max-width: 767px) {
   .footer-footer {
     padding-left: var(--dl-space-space-twounits);

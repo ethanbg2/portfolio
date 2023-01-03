@@ -38,6 +38,7 @@
     align-self: center;
     align-items: center;
     justify-content: center;
+    max-width: var(--dl-size-size-maxwidth);
   }
   .project-gallary-root-class-name {
     align-self: center;
