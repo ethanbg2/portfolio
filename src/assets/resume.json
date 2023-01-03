@@ -5,15 +5,17 @@
       "profile_pic": "profile.jpg",
       "image": "cover-image.png",
       "email": "ethanbg2@illinois.edu",
-      "phone": "(309) 202-6246",
       "url": "https://ethangrinberg.netlify.app/",
       "resume_url": "https://docs.google.com/document/d/1hI4xo5BDCiqm8rjPqlC2n26F9glB9UkavpYrbu4yO-s/export?format=pdf",
       "summary": "Full Stack Developer, Data Scientist, and Researcher",
       "bio": "I like creating digital stuff",
       "profiles": [{
-        "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
+        "network": "GitHub",
+        "url": "https://github.com/ethanbg2"
+      },
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ethangrinberg"
       }]
     },
     "work": [{
