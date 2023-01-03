@@ -57,6 +57,7 @@
     max-width: var(--dl-size-size-maxwidth);
     align-self: center;
     text-align: center;
+    margin-top: var(--dl-space-space-threeunits);
   }
   .about-text3 {
     color: var(--dl-color-gray-white);

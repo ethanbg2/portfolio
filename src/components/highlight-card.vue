@@ -1,5 +1,5 @@
 <template>
-    <div class="highlight-card-feature-card" v-bind:class="rootClassName">
+    <div class="highlight-card-feature-card">
       <h2 class="highlight-card-text"> {{title}}</h2>
       <span class="highlight-card-text1">
         {{ description }}

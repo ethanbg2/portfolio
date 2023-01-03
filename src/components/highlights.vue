@@ -1,5 +1,5 @@
 <template>
-    <div class="highlights-container" v-bind:class="rootClassName">
+    <div class="highlights-container">
       <div class="highlights-container1">
         <h3 class="highlights-text">{{ heading }}</h3>
         <highlight-card
@@ -17,7 +17,6 @@
   export default {
     name: 'Highlights',
     props: {
-      rootClassName: String,
       heading: {
         type: String,
         default: 'Heading',
