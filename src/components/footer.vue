@@ -32,8 +32,6 @@ export default {
 
     var email = resume.basics.email
     this.mail_link = `mailto:${email}`
-    console.log(this.mail_link)
-
   },
   components: {
     AppSocial,

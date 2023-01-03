@@ -1,5 +1,5 @@
 <template>
-  <div class="work-container" v-bind:class="rootClassName">
+  <div class="work-container">
     <app-header></app-header>
     <h1 id="work" class="work-text">
       <span class="work-text01">{{ text }}</span>
@@ -49,7 +49,6 @@ export default {
       type: String,
       default: 'Projects',
     },
-    rootClassName: String,
     text211: {
       type: String,
       default: 'Work Experience',
