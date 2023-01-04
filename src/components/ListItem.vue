@@ -60,6 +60,7 @@
     color: var(--dl-color-gray-white); /* Set the color of the bullet points */
     font-size: 16px; /* Set the size of the bullet points */
     margin-left: var(--dl-space-space-halfunit);
+    line-height: 1.75;
   }
   
   

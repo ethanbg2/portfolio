@@ -87,14 +87,18 @@
         </h2>
       </div>
       <div class="project-page-container09">
-        <a v-for="item in this_project.links" 
-          :href="item.url"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="project-page-link"
-        >
-          {{item.text}}
-        </a>
+        <ul>
+          <li v-for="item in this_project.links">
+            <a  
+            :href="item.url"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="project-page-link"
+          >
+            {{item.text}}
+          </a>
+          </li>
+        </ul>
       </div>
       <!-- uncomment this when I add project gallary to work page -->
       <!-- <project-gallary v-if="is_work" :projects="work_projects"></project-gallary> -->
@@ -315,9 +319,10 @@ export default {
   align-self: flex-start;
   font-style: normal;
   margin-top: var(--dl-space-space-twounits);
-  font-weight: 200;
+  font-weight: 400;
   line-height: 2;
   margin-left: 0px;
+  width: 80%;
 }
 .project-page-container06 {
   flex: 0 0 auto;
@@ -389,6 +394,14 @@ export default {
 .project-page-link:hover {
   color: var(--dl-color-gray-white);
 }
+
+ul {
+  color: var(--dl-color-gray-white); /* Set the color of the bullet points */
+  font-size: 16px; /* Set the size of the bullet points */
+  margin-left: var(--dl-space-space-halfunit);
+  line-height: 1.75;
+}
+
 @media(max-width: 1600px) {
   .project-page-container01 {
     width: 100%;
