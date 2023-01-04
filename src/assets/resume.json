@@ -60,10 +60,13 @@
     {
       "company": "Information and Intelligence Group UIUC",
       "position": "Undergraduate Research Assistant",
-      "date": "May 2021 - Aug 2022",
-      "description": "Description…",
+      "date": "May 2022 - Aug 2022",
+      "description": "As an undergraduate research assistant at the Information and Intelligence Group, I used multi-agent reinforcement learning to experiment with different policies for improving the health of social media platforms. Specifically, I developed and tested various algorithms for modeling the interactions between users and the platform, with the goal of maximizing key metrics such as user engagement and satisfaction while minimizing negative outcomes such as spam and disinformation. Overall, this experience gave me valuable insights into the application of reinforcement learning to complex social systems, and I believe my findings could have broader implications for the design of online communities and platforms.",
       "contributions": [
-        "Started the company"
+        "Developed Markov decision process to model decision-making in social media environment",
+        "Created multi-agent environment in Python to extend an existing economic simulation framework",
+        "Implemented PPO deep reinforcement learning algorithm using RLlib and Tensorflow to train agents to make optimal decisions in multi-agent environment",
+        "Applied trained models to evaluate different policies and strategies for improving  health and performance of social media platforms"
       ],
       "skills": [
         "Python",
@@ -74,8 +77,8 @@
       ],
       "links": [
         {
-          "text": "test",
-          "url": "https://www.google.com"
+          "text": "Lab Website",
+          "url": "https://publish.illinois.edu/varshney/"
         }
       ]
     }],
