@@ -22,9 +22,12 @@
       "company": "Media and Advertising Lab UIUC",
       "position": "Undergraduate Research Assistant",
       "date": "May 2021 - Aug 2022",
-      "description": "Description…",
+      "description": "As an Undergraduate Research Assistant at the Media and Advertising Lab at the University of Illinois Urbana-Champaign, I provided crucial support to a range of research projects by contributing my skills in data processing, analysis, and visualization.",
       "contributions": [
-        "Started the company"
+        "Successfully developed and implemented Python algorithms for extracting attention metrics from high-dimensional mobile phone log data, resulting in deeper understanding of participants' behavior",
+        "Conducted advanced time series sentiment analysis of movie scripts using state-of-the-art natural language processing tools (Spacy, NLTK) and machine learning techniques (Sklearn) resulting in new understanding of movie story structure",
+        "Created key data visualizations and analyses in Python, Pandas, Altair for research paper accepted to ICA conference in Paris, France",
+        "Utilized web scraping tools BS4 and Selenium to efficiently extract data from the internet, resulting in a significant time-saving and improved accuracy of data collection for analyses"
       ],
       "skills": [
         "Python",
@@ -38,24 +41,32 @@
         "Altair",
         "Matplotlib",
         "Scipy",
-        "Sklearn"
+        "Sklearn",
+        "Zotero"
       ],
       "projects": [
       ],
       "links": [
         {
-          "text": "Lab Website",
+          "text": "MAD Lab Website",
           "url": "https://madlabresearch.web.illinois.edu/"
+        },
+        {
+          "text": "MUSE Lab Website",
+          "url": "https://museresearch.github.io/"
         }
       ]
     },
     {
       "company": "Information and Intelligence Group UIUC",
       "position": "Undergraduate Research Assistant",
-      "date": "May 2021 - Aug 2022",
-      "description": "Description…",
+      "date": "May 2022 - Aug 2022",
+      "description": "As an undergraduate research assistant at the Information and Intelligence Group, I used multi-agent reinforcement learning to experiment with different policies for improving the health of social media platforms. Specifically, I developed and tested various algorithms for modeling the interactions between users and the platform, with the goal of maximizing key metrics such as user engagement and satisfaction while minimizing negative outcomes such as spam and disinformation. Overall, this experience gave me valuable insights into the application of reinforcement learning to complex social systems, and I believe my findings could have broader implications for the design of online communities and platforms.",
       "contributions": [
-        "Started the company"
+        "Developed Markov decision process to model decision-making in social media environment",
+        "Created multi-agent environment in Python to extend an existing economic simulation framework",
+        "Implemented PPO deep reinforcement learning algorithm using RLlib and Tensorflow to train agents to make optimal decisions in multi-agent environment",
+        "Applied trained models to evaluate different policies and strategies for improving  health and performance of social media platforms"
       ],
       "skills": [
         "Python",
@@ -66,8 +77,8 @@
       ],
       "links": [
         {
-          "text": "test",
-          "url": "https://www.google.com"
+          "text": "Lab Website",
+          "url": "https://publish.illinois.edu/varshney/"
         }
       ]
     }],
@@ -89,11 +100,19 @@
     },
     {
       "title": "James Scholar",
-      "description": "Top 20% distinction with the completion of an honors project every year"
+      "description": "Top 20% of admitted freshman class. Requires keeping a GPA of 3.5 and completing an honors project every year."
+    },
+    {
+      "title": "Pens to Lens",
+      "description": "Wrote a short film screenplay that was selected to be made into a film and shown at a local movie theater"
+    },
+    {
+      "title": "Film Festivals",
+      "description": "Accepted to the following film festivals: All American High school Film Festival, Middle Coast Film Festival, Catlow Film Festival, Shawnee Shorts Midwestern Film Festival, Prairie State Film Festival"
     }
   ],
     "publications": [{
-      "title": "ICA Movie NLP Research Paper",
+      "title": "The shape of inspiration: Exploring the narrative story trajectories and self-transcendent elicitors within inspirational movies",
       "description": "Dale, K., Fisher, J.T., Liao, J., & Grinberg, E. (2022). The shape of inspiration: Exploring the narrative story trajectories and self-transcendent elicitors within inspirational movies. Paper submitted to the 22nd annual meeting of the International Communication Association (Paris, FR)."
     }],
     "projects": [
