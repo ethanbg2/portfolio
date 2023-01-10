@@ -27,7 +27,7 @@
         "Successfully developed and implemented Python algorithms for extracting attention metrics from high-dimensional mobile phone log data, resulting in deeper understanding of participants' behavior",
         "Conducted advanced time series sentiment analysis of movie scripts using state-of-the-art natural language processing tools (Spacy, NLTK) and machine learning techniques (Sklearn) resulting in new understanding of movie story structure",
         "Created key data visualizations and analyses in Python, Pandas, Altair for research paper accepted to ICA conference in Paris, France",
-        "Utilized web scraping tools BS4 and Selenium to efficiently extract data from the internet, resulting in a significant time-saving and improved accuracy of data collection for analyses"
+        "Utilized BS4 and Selenium in developing web scrapers, resulting in a significant time-saving and improved accuracy of data collection for analyses"
       ],
       "skills": [
         "Python",
@@ -66,7 +66,7 @@
         "Developed Markov decision process to model decision-making in social media environment",
         "Created multi-agent environment in Python to extend an existing economic simulation framework",
         "Implemented PPO deep reinforcement learning algorithm using RLlib and Tensorflow to train agents to make optimal decisions in multi-agent environment",
-        "Applied trained models to evaluate different policies and strategies for improving  health and performance of social media platforms"
+        "Applied trained models to evaluate different policies and strategies for improving health and performance of social media platforms"
       ],
       "skills": [
         "Python",
@@ -138,9 +138,9 @@
         "poster.jpeg"
       ],
       "contributions": [
-        "task 1",
-        "task 2",
-        "task 3"
+        "Implemented cutting-edge unsupervised graph embedding algorithm in Networkx and TensorFlow to convert complex networks of misinformation diffusion to embeddings",
+        "Utilized K-means clustering with Sklearn to identify previously unseen patterns in diffusion of misinformation, providing valuable insights for understanding and combating spread of false information",
+        "Created poster to present findings at UIUC Undergraduate Research Symposium for which Outstanding Poster Presentation in Numbers Data And Computation was earned"
       ],
       "links": [
         {
@@ -168,31 +168,52 @@
   {
       "name": "Product Cupid",
       "type": "Web App",
-      "description": "Description…",
-      "date": "Aug 2022",
+      "description": "People love personalized recommendations but are weary of the privacy they give up to get them. This project aims to reconcile both of these seemingly opposite desires. By creating a recommendation system that only relies on volunteered user preferences, the hope is to show that it is possible to create a privacy-first recommendation system. This project is still under development, namely the AI recommendation algorithm, but so far a simple proof of concept was built.",
+      "date": "Aug 2022 - Present",
       "skills": [
         "Python",
+        "Javascript",
         "React.js",
-        "Microservice Architecture"
+        "Flask",
+        "Microservice Architecture",
+        "Heroku",
+        "REST APIs",
+        "CI/CD",
+        "Material UI",
+        "Agile",
+        "Figma"
       ],
       "images": [
-        "profile.jpg",
-        "profile.jpg",
-        "profile.jpg"
+        "product_cupid.png",
+        "product_cupid2.png",
+        "product_cupid3.png"
       ],
       "contributions": [
-        "task 1",
-        "task 2",
-        "task 3"
+        "Led development of full stack product recommendation app that used gamification techniques to enhance user experience of searching for products",
+        "Developed Flask-based REST backend to manage product data and feed product recommendations to frontend",
+        "Created dynamic and responsive frontend using React.js, Material UI, and Javascript for real-time data updates through HTTP requests to backend",
+        "Created continuous integration and deployment (CI/CD) pipeline using Github and Heroku to streamline development process and ensure seamless user experience"
       ],
       "links": [
         {
-          "text": "test",
-          "url": "https://www.google.com"
+          "text": "Web App",
+          "url": "https://product-cupid.herokuapp.com"
         },
         {
-          "text": "test 2",
-          "url": "https://ethangrinberg.netlify.app/"
+          "text": "GitHub",
+          "url": "https://github.com/ethanbg2/product-cupid"
+        }, 
+        {
+          "text": "Project Website",
+          "url": "https://sites.google.com/illinois.edu/productcupid"
+        }, 
+        {
+          "text": "Figma Design",
+          "url": "https://www.figma.com/proto/5Y67kWgH6rkzHOz9cBtuDQ/Final-draft?node-id=120%3A131&source=email_invite&starting-point-node-id=120%3A131"
+        },
+        {
+          "text": "Final Report",
+          "url": "https://drive.google.com/file/d/17gkqg65eWS8lhOFFxEMIY4zjLOCbIRJw/view?usp=sharing"
         }
       ]
     }],
