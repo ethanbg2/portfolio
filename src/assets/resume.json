@@ -138,9 +138,9 @@
         "poster.jpeg"
       ],
       "contributions": [
-        "task 1",
-        "task 2",
-        "task 3"
+        "Implemented cutting-edge unsupervised graph embedding algorithm in Networkx and TensorFlow to convert complex networks of misinformation diffusion to embeddings",
+        "Utilized K-means clustering with Sklearn to identify previously unseen patterns in diffusion of misinformation, providing valuable insights for understanding and combating spread of false information",
+        "Created poster to present findings at UIUC Undergraduate Research Symposium for which Outstanding Poster Presentation in Numbers Data And Computation was earned"
       ],
       "links": [
         {
